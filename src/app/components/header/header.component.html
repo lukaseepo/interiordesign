@@ -75,59 +75,59 @@
     </div>
     <ul class="nav">
         <li (click)='activate1()'>
-            <a href="">home</a>
+            <a routerLinkActive="activate" [routerLink]='[""]' [routerLinkActiveOptions]='{exact:true}' href="">home</a>
             <i class="fas fa-chevron-down"></i>
         </li>
         <ul id="activated1">
             <li>
-                <a href="">home - layout 1</a>
+                <a routerLinkActive="activate" [routerLink]='[""]' [routerLinkActiveOptions]='{exact:true}' href="">home - layout 1</a>
             </li>
-            <li><a href="">home - layout 2</a></li>
+            <li><a routerLinkActive="activate" [routerLink]='["home2"]' href="">home - layout 2</a></li>
         </ul>
         <li>
-            <a href="">about us</a>
+            <a routerLinkActive="activate" [routerLink]='["about"]' href="">about us</a>
         </li>
         <li>
-            <a href="">services</a>
+            <a routerLinkActive="activate" [routerLink]='["service"]' href="">services</a>
         </li>
         <li (click)='activate2()'>
-            <a href="">projects</a>
+            <a routerLinkActive="activate" [routerLinkActiveOptions]='{exact:true}' [routerLink]="['projects']" href="">projects</a>
             <i class="fas fa-chevron-down"></i>
         </li>
         <ul id="activated2">
             <li>
-                <a href="">projects</a>
+                <a routerLinkActive="activate" [routerLinkActiveOptions]='{exact:true}' [routerLink]="['projects']" href="">projects</a>
             </li>
-            <li><a href="">project detail</a></li>
+            <li><a routerLinkActive="activate" [routerLink]="['projectdetail']" href="">project detail</a></li>
         </ul>
         <li (click)='activate3()'>
-            <a href="">pages</a>
+            <a routerLinkActive="activate" [routerLink]="['ourteam']" [routerLinkActiveOptions]='{exact:true}' href="">pages</a>
             <i class="fas fa-chevron-down"></i>
         </li>
         <ul id="activated3">
             <li>
-                <a href="">our team</a>
+                <a routerLinkActive="activate" [routerLink]="['ourteam']" [routerLinkActiveOptions]='{exact:true}' href="">our team</a>
             </li>
             <li>
-                <a href="">pricing</a>
+                <a routerLinkActive="activate" [routerLink]="['pricing']" href="">pricing</a>
             </li>
             <li>
-                <a href="">faq</a>
+                <a [routerLink]="['FAQ']" routerLinkActive="activate" href="">faq</a>
             </li>
             <li>
-                <a href="">404</a>
+                <a [routerLink]="['404-page']" routerLinkActive="activate" href="">404</a>
             </li>
         </ul>
         <li (click)='activate4()'>
-            <a href="">contact</a>
+            <a routerLinkActive="activate" [routerLinkActiveOptions]='{exact:true}' [routerLink]="['contact-us']" href="">contact</a>
             <i class="fas fa-chevron-down"></i>
         </li>
         <ul id="activated4">
             <li>
-                <a href="">contact 1</a>
+                <a routerLinkActive="activate" [routerLinkActiveOptions]='{exact:true}' [routerLink]="['contact-us']" href="">contact 1</a>
             </li>
             <li>
-                <a href="">contact 2</a>
+                <a [routerLink]="['contact-us2']" routerLinkActive="activate" href="">contact 2</a>
             </li>
         </ul>
     </ul>
