@@ -1,0 +1,60 @@
+@import '../../components/colors.scss';
+@import '../../components/mixins.scss';
+.slider-section {
+    @include slider-section2();
+}
+
+.notfound-section {
+    width: 100%;
+    padding: 100px 0px 100px 0px;
+    .notfound-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        .info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h2 {
+                color: $black;
+                font-family: "Lato";
+                font-size: 128px;
+                font-weight: 600;
+                line-height: 1;
+                @media screen and (max-width: 980px) {
+                    font-size: 70px;
+                }
+                @media screen and (max-width: 780px) {
+                    font-size: 40px;
+                }
+                @media screen and (max-width: 500px) {
+                    font-size: 40px;
+                }
+            }
+            h3 {
+                text-align: center;
+                color: $brown;
+                font-family: "Lato";
+                font-size: 32px;
+                font-weight: 600;
+                letter-spacing: 1.2px;
+                line-height: 1.5;
+                @media screen and (max-width: 780px) {
+                    font-size: 27px;
+                }
+            }
+            p {
+                text-align: center;
+                font-family: "Heebo";
+                font-size: 16px;
+                font-weight: 300;
+                color: $grey2;
+                line-height: 1.5;
+            }
+            a {
+                @include hoverbutton();
+            }
+        }
+    }
+}

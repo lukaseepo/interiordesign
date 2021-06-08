@@ -1,0 +1,237 @@
+@import '../../components/colors.scss';
+@import '../../components/mixins.scss';
+.slider-section {
+    width: 100%;
+    position: relative;
+    .background-overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: $black2;
+        opacity: 0.7;
+        top: 0;
+    }
+    .slider-item {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: flex-end;
+        height: 87.68vh;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        @media screen and (max-width: 1200px) {
+            padding: 20px;
+        }
+        .info {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            bottom: 80px;
+            @media screen and (max-width: 450px) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            h2 {
+                color: $white;
+                line-height: 1;
+                font-family: "Lato";
+                font-size: 48px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1.2px;
+                @media screen and (max-width: 600px) {
+                    font-size: 32px;
+                }
+            }
+            .page-info {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                li {
+                    display: flex;
+                    align-items: center;
+                    margin-right: calc(0px/2);
+                    margin-left: calc(0px/2);
+                    span {
+                        padding-left: 10px;
+                        color: $white;
+                        font-family: "Heebo";
+                        font-size: 16px;
+                        font-weight: 300;
+                        @media screen and (max-width: 600px) {
+                            padding-left: 0px;
+                        }
+                    }
+                    i {
+                        color: $brown;
+                        width: 1.25em;
+                        font-size: 14px;
+                        transform: translateX(10px);
+                        @media screen and (max-width: 600px) {
+                            transform: translateX(5px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.design-section {
+    @include design-section();
+}
+
+.execute-section {
+    width: 100%;
+    background-color: $grey6;
+    padding: 100px 0px 20px 0px;
+    margin-top: 4em;
+    .execute-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        @media screen and (max-width: 1200px) {
+            padding: 20px;
+        }
+        @media screen and (max-width: 780px) {
+            grid-template-columns: 1fr;
+            grid-row-gap: 30px;
+        }
+        .execute-item {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            @media screen and (max-width: 600px) {
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+            h2 {
+                font-family: "Lato";
+                color: $black;
+                font-size: 32px;
+                line-height: 1;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                @media screen and (max-width: 600px) {
+                    font-size: 26px;
+                }
+            }
+            p {
+                color: $grey2;
+                font-family: 'Heebo';
+                font-size: 16px;
+                font-weight: 300;
+            }
+            a {
+                @include hoverbutton();
+                position: relative;
+                bottom: 10px;
+            }
+        }
+        .item-info {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-row-gap: 20px;
+            &:nth-child(3) {
+                margin-left: 20px;
+                @media screen and (max-width: 780px) {
+                    margin-left: 0px;
+                }
+            }
+            .info {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 30px 30px 30px 30px;
+                box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 10%);
+                background-color: $white;
+                @media screen and (max-width: 600px) {
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+                &:nth-child(2) {
+                    .head-title {
+                        h3 {
+                            padding-left: 13px;
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    .head-title {
+                        &:nth-child(2) {
+                            h3 {
+                                padding-left: 13px;
+                            }
+                        }
+                    }
+                }
+                .head-title {
+                    display: flex;
+                    width: 100%;
+                    @media screen and (max-width: 600px) {
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                    }
+                    i {
+                        font-size: 40px;
+                        color: $brown;
+                        @media screen and (max-width: 600px) {
+                            font-size: 35px;
+                        }
+                    }
+                    .plan {
+                        transform: translateX(-6px);
+                    }
+                    .design {
+                        transform: translateX(-13px);
+                    }
+                    h3 {
+                        color: $black;
+                        font-family: "Lato";
+                        font-size: 24px;
+                        font-weight: 600;
+                        line-height: 1.2;
+                        margin-left: 20px;
+                        @media screen and (max-width: 600px) {
+                            font-size: 20px;
+                            margin-left: 0px;
+                            transform: translateX(0px);
+                            margin-top: 10px;
+                        }
+                    }
+                }
+                p {
+                    color: $grey2;
+                    font-size: 16px;
+                    font-weight: 300;
+                    font-family: "Heebo";
+                    padding-left: 3.8em;
+                    @media screen and (max-width: 600px) {
+                        padding-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.partner-section {
+    @include partner-section2();
+}
+
+.interior-section {
+    @include interior-section();
+}
+
+.innerproject-section {
+    @include innerproject-section();
+}

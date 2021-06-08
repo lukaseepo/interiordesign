@@ -1,0 +1,230 @@
+@import '../../components/colors.scss';
+@import '../../components/mixins.scss';
+.slider-section {
+    @include slider-section2();
+}
+
+.project-section {
+    width: 100%;
+    padding-top: 6em;
+    .project-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        @media screen and (max-width: 1200px) {
+            padding: 20px;
+        }
+        .title {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            @media screen and (max-width: 600px) {
+                justify-content: center;
+            }
+            h3 {
+                color: $white;
+                font-family: "Lato";
+                font-size: 100px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                text-shadow: 0px 0px 1px rgb(0 0 0 / 30%);
+                position: absolute;
+                z-index: -1;
+                @media screen and (max-width: 1000px) {
+                    font-size: 50px;
+                }
+                @media screen and (max-width: 780px) {
+                    font-size: 40px;
+                }
+            }
+            h2 {
+                color: $black;
+                font-family: "Lato", Sans-serif;
+                font-size: 32px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-bottom: 1.5em;
+                @media screen and (max-width: 600px) {
+                    font-size: 25px;
+                }
+            }
+            p {
+                color: $grey2;
+                font-family: "Heebo";
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 26px;
+                margin-bottom: 1.5em;
+            }
+            .project-item {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                margin-top: 1em;
+                @media screen and (max-width: 780px) {
+                    grid-template-columns: 1fr;
+                }
+                .project {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    .active {
+                        height: 105.6vh !important;
+                    }
+                    &:nth-child(1) {
+                        .item {
+                            &:nth-child(1) {
+                                height: 42.90496vh;
+                            }
+                            &:nth-child(2) {
+                                height: 105.6vh;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        .item {
+                            &:nth-child(1) {
+                                height: 105.6vh;
+                            }
+                            &:nth-child(2) {
+                                height: 42.90496vh;
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        .item {
+                            &:nth-child(1) {
+                                height: 42.90496vh;
+                            }
+                            &:nth-child(2) {
+                                height: 105.6vh;
+                            }
+                        }
+                    }
+                    .item {
+                        width: 100%;
+                        background-size: cover;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        position: relative;
+                        padding: 21% 21% 21% 21%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        @media screen and (max-width: 780px) {
+                            justify-content: center;
+                        }
+                        &:hover {
+                            .info {
+                                visibility: visible;
+                                transition: 0.5s;
+                                animation: fadeInUp 1000ms both;
+                            }
+                        }
+                        @keyframes fadeInUp {
+                            from {
+                                opacity: 0;
+                                transform: translate3d(0, 25%, 0);
+                            }
+                            to {
+                                opacity: 1;
+                                transform: translate3d(0, 0, 0);
+                            }
+                        }
+                        .info {
+                            display: flex;
+                            flex-direction: column;
+                            text-align: center;
+                            position: relative;
+                            visibility: hidden;
+                            @media screen and (max-width: 780px) {
+                                justify-content: center;
+                            }
+                            h5 {
+                                color: $white;
+                                font-family: "Lato";
+                                font-size: 20px;
+                                font-weight: 600;
+                                line-height: 1.7em;
+                                margin-bottom: 5px;
+                                @media screen and (max-width: 1000px) {
+                                    font-size: 17px;
+                                }
+                            }
+                            p {
+                                margin-bottom: 5px;
+                                color: $grey4;
+                                font-family: "Heebo";
+                                font-size: 14px;
+                                font-weight: 300;
+                            }
+                        }
+                        &:hover {
+                            .background-overlay {
+                                background-color: $black2;
+                                transition: 0.5s;
+                                opacity: 0.7;
+                            }
+                        }
+                        .background-overlay {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .slider {
+        width: 100%;
+        height: 100%;
+        z-index: 50;
+        position: fixed;
+        top: 0px;
+        .background-overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: $black2;
+            opacity: 0.7;
+        }
+        .slider-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+            height: 110vh;
+            @media screen and (max-width: 650px) {
+                padding: 25px;
+            }
+            .item-image {
+                width: 80vh;
+                height: 80vh;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+                z-index: 100;
+                @media screen and (max-width: 600px) {
+                    width: 50vh;
+                    height: 50vh;
+                }
+            }
+        }
+        .close {
+            @include close();
+        }
+    }
+}
+
+.innerproject-section {
+    @include innerproject-section();
+}

@@ -1,0 +1,8 @@
+.header-module {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    z-index: 11;
+    width: 100%;
+}

@@ -1,0 +1,731 @@
+@import '../../components/colors.scss';
+@import '../../components/mixins.scss';
+.activatee {
+    z-index: 0 !important;
+}
+
+.slider-section {
+    @include slider-section();
+}
+
+.perfectdesign-section {
+    width: 100%;
+    transform: translateY(-60px);
+    .perfectdesign-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        @media screen and (max-width: 780px) {
+            grid-template-columns: 1fr;
+            grid-row-gap: 30px;
+        }
+        @media screen and (max-width: 1200px) {
+            padding: 20px;
+        }
+        .item {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $white;
+            padding: 50px 50px 50px 50px;
+            align-items: center;
+            box-shadow: 0px 5px 20px 0px rgb(0 0 0 / 10%);
+            position: relative;
+            &:nth-child(2) {
+                .circle {
+                    i {
+                        transform: translateX(7px);
+                    }
+                }
+            }
+            &:nth-child(3) {
+                background-color: $black;
+                .circle {
+                    background-color: $white;
+                    i {
+                        color: $black;
+                    }
+                }
+                h3 {
+                    color: $white;
+                }
+                p {
+                    color: $white;
+                }
+            }
+            h3 {
+                font-family: "Lato";
+                font-size: 24px;
+                font-weight: 600;
+                color: $black;
+                margin-top: .5rem;
+                margin-bottom: 1rem;
+                line-height: 1.2;
+                @media screen and (max-width: 600px) {
+                    font-size: 19px;
+                }
+            }
+            p {
+                color: $grey5;
+                font-family: "Heebo";
+                font-size: 16px;
+                font-weight: 300;
+                text-align: center;
+                line-height: 1.5;
+                @media screen and (max-width: 600px) {
+                    font-size: 11px;
+                }
+            }
+            .circle {
+                padding: 25px;
+                border-radius: 100%;
+                background-color: $black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: -60px;
+                @media screen and (max-width: 780px) {
+                    position: static;
+                    i {
+                        font-size: 40px;
+                    }
+                    padding: 15px;
+                }
+                i {
+                    width: 50px;
+                    height: 50px;
+                    font-size: 50px;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.interior-section {
+    width: 100%;
+    padding-bottom: 8em;
+    .interior-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        @media screen and (max-width: 1200px) {
+            padding: 20px;
+        }
+        @media screen and (max-width: 780px) {
+            grid-template-columns: 1fr;
+            grid-row-gap: 30px;
+        }
+        .item-info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 60px 10px 10px;
+            @media screen and (max-width: 780px) {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding-right: 0px;
+            }
+            h2 {
+                color: $brown;
+                font-family: "Lato";
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                line-height: 1;
+            }
+            h3 {
+                color: $black;
+                font-family: "Lato";
+                font-size: 42px;
+                font-weight: 600;
+                text-transform: uppercase;
+                line-height: 1.3em;
+                letter-spacing: 1px;
+                @media screen and (max-width: 600px) {
+                    font-size: 30px;
+                }
+            }
+            p {
+                font-family: "Heebo";
+                font-weight: 300;
+                line-height: 26px;
+                color: $grey2;
+                font-size: 1rem;
+                @media screen and (max-width: 600px) {
+                    font-size: 0.7rem;
+                }
+            }
+            img {
+                width: 45%;
+                margin-top: 2em;
+            }
+            h4 {
+                color: $black;
+                font-family: "Lato";
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 1.5;
+            }
+            a {
+                @include hoverbutton();
+            }
+        }
+        .item-image {
+            width: 100%;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        .sm-info {
+            box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 10%);
+            padding: 25px 45px 25px 25px;
+            position: absolute;
+            left: 290px;
+            bottom: -40px;
+            background-color: $white;
+            @media screen and (max-width: 780px) {
+                position: static;
+                width: 100%;
+            }
+            .item {
+                display: flex;
+                padding: 0px 0px 0px 20px;
+                border-left: 2px solid $brown;
+                p {
+                    font-family: "Heebo", Sans-serif;
+                    font-weight: 300;
+                    color: $grey2;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    transform: translateY(10px);
+                    @media screen and (max-width: 600px) {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+            h4 {
+                color: $black;
+                font-family: "Heebo";
+                line-height: 1.5;
+                font-size: 14px;
+                font-weight: 400;
+                transform: translateY(20px);
+            }
+        }
+    }
+}
+
+.service-section {
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    position: relative;
+    padding: 100px 0px 0px 0px;
+    .service-backgroundoverlay {
+        position: absolute;
+        width: 100%;
+        height: 266px;
+        background-color: $white;
+        bottom: 0;
+    }
+    .background-overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: $black;
+        opacity: 0.7;
+        top: 0;
+    }
+    .service-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+        @media screen and (max-width: 1200px) {
+            padding: 20px;
+        }
+        .title {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            flex-direction: column;
+            h2 {
+                color: $white;
+                font-family: "Lato";
+                line-height: 1;
+                font-size: 32px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                @media screen and (max-width: 600px) {
+                    font-size: 25px;
+                }
+            }
+            p {
+                text-align: center;
+                color: $white;
+                font-family: "Heebo", Sans-serif;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 26px;
+            }
+        }
+        .service-item {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 30px;
+            position: relative;
+            @media screen and (max-width: 780px) {
+                grid-template-columns: 1fr;
+                grid-row-gap: 30px;
+            }
+            .item {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                &:hover {
+                    .item-image {
+                        .image {
+                            transition: 0.5s;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                .item-image {
+                    width: 100%;
+                    height: 235.328px;
+                    overflow: hidden;
+                    .image {
+                        width: 100%;
+                        height: 100%;
+                        background-size: cover;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        transition: 0.5s;
+                    }
+                }
+                .item-info {
+                    width: 100%;
+                    padding: 35px 30px 40px 30px;
+                    box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 10%);
+                    background-color: $white;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    h3 {
+                        color: $black;
+                        font-family: "Lato";
+                        font-size: 24px;
+                        font-weight: 600;
+                        margin: 0px 0px 16px 0px;
+                        line-height: 1.2;
+                        @media screen and (max-width: 600px) {
+                            font-size: 18px;
+                        }
+                    }
+                    p {
+                        margin: 0px 0px 15px 0px;
+                        font-family: "Heebo";
+                        font-size: 16px;
+                        font-weight: 300;
+                        color: $grey2;
+                    }
+                    a {
+                        @include hoverbutton();
+                    }
+                }
+            }
+        }
+    }
+}
+
+.achivement-section {
+    width: 100%;
+    margin-top: 7em;
+    .achivement-items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 40px;
+        position: relative;
+        padding-bottom: 4em;
+        @media screen and (max-width: 1200px) {
+            padding: 20px;
+            justify-items: center;
+        }
+        @media screen and (max-width: 780px) {
+            grid-template-columns: 1fr;
+            grid-row-gap: 20px;
+        }
+        h2 {
+            color: $white;
+            font-family: "Lato";
+            font-size: 100px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 0px 0px 1px rgb(0 0 0 / 30%);
+            position: absolute;
+            top: 0px;
+            left: 180px;
+            @media screen and (max-width: 920px) {
+                font-size: 50px;
+                left: 250px;
+                top: 20px;
+            }
+            @media screen and (max-width: 780px) {
+                position: static;
+                font-size: 30px;
+            }
+        }
+        .item {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            z-index: 1;
+            span {
+                font-family: "Heebo";
+                font-size: 32px;
+                font-weight: 600;
+                color: $black3;
+                line-height: 1;
+                margin-bottom: 10px;
+                @media screen and (max-width: 600px) {
+                    font-size: 27px;
+                }
+            }
+            h3 {
+                color: $grey2;
+                font-family: "Heebo";
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 1.2;
+            }
+        }
+    }
+}
+
+.pricing-section {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: $grey6;
+    .pricing-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 30px;
+        @media screen and (max-width: 1200px) {
+            padding: 20px;
+        }
+        @media screen and (max-width: 780px) {
+            grid-template-columns: 1fr;
+            grid-row-gap: 30px;
+        }
+        .price-info {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            @media screen and (max-width: 600px) {
+                text-align: center;
+                align-items: center;
+            }
+            h2 {
+                font-family: "Lato";
+                font-size: 32px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: $black;
+                line-height: 1;
+                @media screen and (max-width: 600px) {
+                    font-size: 25px;
+                }
+            }
+            p {
+                font-family: "Heebo";
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 26px;
+                color: $grey2;
+            }
+            a {
+                @include hoverbutton();
+            }
+        }
+        .price-plans {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 40px 0px 40px 0px;
+            box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+            text-align: center;
+            align-items: center;
+            background-color: $white;
+            @media screen and (max-width: 600px) {
+                justify-content: center;
+            }
+            span {
+                color: $grey2;
+                font-family: "Roboto";
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 0.3em;
+                padding-top: 10px;
+            }
+            h2 {
+                font-family: "Lato";
+                font-size: 24px;
+                font-weight: 600;
+                color: $black;
+                line-height: 1;
+                @media screen and (max-width: 600px) {
+                    font-size: 19px;
+                }
+            }
+            h3 {
+                color: $black;
+                font-family: "Heebo";
+                font-size: 48px;
+                font-weight: 600;
+                margin-top: 30px;
+                @media screen and (max-width: 600px) {
+                    font-size: 32px;
+                }
+            }
+            a {
+                @include hoverbutton();
+            }
+            .services {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                justify-content: center;
+                li {
+                    display: flex;
+                    padding-bottom: calc(50px/2);
+                    padding-top: calc(50px/2);
+                    justify-content: center;
+                    align-items: center;
+                    border-bottom: 1px solid #6B7C9326;
+                    width: 60%;
+                    i {
+                        color: $brown;
+                        font-size: 14px;
+                        width: 1.25em;
+                        padding-top: 10px;
+                    }
+                    span {
+                        color: $black;
+                        padding-left: 5px;
+                        font-family: "Heebo";
+                        font-size: 16px;
+                        font-weight: 300;
+                        line-height: 1.5;
+                        @media screen and (max-width: 600px) {
+                            padding-left: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.expertise-section {
+    width: 100%;
+    padding-top: 5em;
+    .expertise-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        @media screen and (max-width: 1200px) {
+            padding: 20px;
+        }
+        @media screen and (max-width: 600px) {
+            grid-template-columns: 1fr;
+        }
+        .item-info {
+            display: flex;
+            flex-direction: column;
+            @media screen and (max-width: 600px) {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            h2 {
+                color: $brown;
+                font-family: "Lato";
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                line-height: 1;
+            }
+            h3 {
+                font-family: "Lato";
+                font-size: 32px;
+                font-weight: 600;
+                text-transform: uppercase;
+                line-height: 1.3em;
+                letter-spacing: 1px;
+                color: $black;
+                @media screen and (max-width: 600px) {
+                    font-size: 25px;
+                }
+            }
+            p {
+                font-family: "Heebo";
+                font-size: 16px;
+                color: $grey2;
+                font-weight: 300;
+                line-height: 26px;
+            }
+        }
+        .chart {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-column-gap: 5px;
+            .item {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                &:nth-child(2) {
+                    .line {
+                        .line-brown {
+                            width: 75%;
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    .line {
+                        .line-brown {
+                            width: 78%;
+                        }
+                    }
+                }
+                .percentage {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    h4 {
+                        color: $black;
+                        font-family: "Heebo";
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        transform: translateY(10px);
+                    }
+                }
+                .line {
+                    width: 100%;
+                    height: 15px;
+                    background-color: $grey6;
+                    .line-brown {
+                        width: 86%;
+                        background-color: $brown;
+                        height: 100%;
+                        position: relative;
+                        span {
+                            top: -30px;
+                            position: absolute;
+                            color: $black;
+                            font-family: "Roboto";
+                            font-size: 14px;
+                            font-weight: 300;
+                            line-height: 1.5;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.partner-section {
+    @include partner-section();
+}
+
+.innerproject-section {
+    width: 100%;
+    background-color: $black;
+    .inner-items {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 0px 60px 0px;
+        align-items: center;
+        @media screen and (max-width: 1200px) {
+            padding: 20px;
+        }
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+        }
+        .inner-item {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            @media screen and (max-width: 600px) {
+                padding: 20px;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+            }
+            h2 {
+                color: $white;
+                font-family: "Heebo";
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 1;
+                @media screen and (max-width: 600px) {
+                    font-size: 25px;
+                }
+            }
+            p {
+                font-family: "Heebo";
+                font-size: 16px;
+                font-weight: 300;
+                color: $grey2;
+            }
+        }
+        a {
+            font-family: "Heebo";
+            font-size: 12px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            background-color: transparent;
+            border: 1px solid $white;
+            border-radius: 0px 0px 0px 0px;
+            padding: 20px 40px 20px 40px;
+            transition: 0.5s;
+            color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: max-content;
+            @media screen and (max-width: 780px) {
+                margin-top: 30px;
+            }
+            &:hover {
+                transition: 0.5s;
+                background-color: $white;
+                color: $black;
+            }
+        }
+    }
+}

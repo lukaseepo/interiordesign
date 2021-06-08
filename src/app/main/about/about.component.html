@@ -1,0 +1,189 @@
+<section class="slider-section">
+    <div class="background-overlay"></div>
+    <div class="slider-item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/interior-design-of-a-coffee-shop-cafe-3d-rendering.jpg);">
+        <div class="container">
+            <div class="info">
+                <h2>About Us</h2>
+                <ul class="page-info">
+                    <li>
+                        <span>Home</span>
+                    </li>
+                    <li>
+                        <i aria-hidden="true" class="fas fa-angle-right"></i>
+                        <span>About Us</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="design-section">
+    <div class="container">
+        <div class="design-items">
+            <div class="item-image">
+                <div class="item-video">
+                    <div (click)='popUpVideo()' class="video-icon">
+                        <img src="https://image.flaticon.com/icons/png/128/860/860780.png" alt="">
+                    </div>
+                    <h2>Watch VIdeo</h2>
+                </div>
+            </div>
+            <div class="item-info">
+                <div class="info">
+                    <h2>Welcome to Inner</h2>
+                    <h3>Innovative ideas stylish designs</h3>
+                    <p>
+                        Far far away, behind the word mountains, far from the <br> countries Vokalia and Consonantia, there live the blind texts. <br> Separated they live in Bookmarksgrove right at the coast of <br> the Semantics, a large language ocean.
+                    </p>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="projects">
+                    <div class="item">
+                        <span class="count-up">25 +</span>
+                        <h3>Years of Experience</h3>
+                    </div>
+                    <div class="item">
+                        <span class="count-up">1,250 +</span>
+                        <h3>Projects Completed</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf='popUp' class="video-popup">
+        <div class="background-overlay"></div>
+        <div (click)='close()' class="close">×</div>
+        <iframe src="https://www.youtube.com/embed/1MTkZPys7mU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+<section class="execute-section">
+    <div class="container">
+        <div class="execute-items">
+            <div class="execute-item">
+                <h2>Why Choose Us</h2>
+                <p>Far far away, behind the word mountains, far <br> from the countries Vokalia and Consonantia, <br> there live the blind texts. Separated they live <br> in Bookmarksgrove</p>
+                <a href="">view all</a>
+            </div>
+            <div class="item-info">
+                <div class="info">
+                    <div class="head-title">
+                        <i class="far fa-clock"></i>
+                        <h3>Fast Building </h3>
+                    </div>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+                <div class="info">
+                    <div class="head-title">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Smartly Execute </h3>
+                    </div>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+            </div>
+            <div class="item-info">
+                <div class="info">
+                    <div class="head-title">
+                        <i class="fas fa-edit"></i>
+                        <h3 class="plan">Carefully Planned</h3>
+                    </div>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+                <div class="info">
+                    <div class="head-title">
+                        <i class="fas fa-tools"></i>
+                        <h3 class="design">Perfect Design</h3>
+                    </div>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="partner-section">
+    <div class="container">
+        <owl-carousel-o [options]="customOptionsLogo">
+            <ng-template carouselSlide>
+                <div class="partner-items">
+                    <div class="item-logo" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Asset-5@2x.png);">
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="partner-items">
+                    <div class="item-logo" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Asset-2@2x.png);">
+                    </div>
+                </div>
+
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="partner-items">
+                    <div class="item-logo" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Asset-1@2x-1.png);">
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="partner-items">
+                    <div class="item-logo" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Asset-3@2x.png);">
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="partner-items">
+                    <div class="item-logo" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Asset-4@2x.png);">
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="partner-items">
+                    <div class="item-logo" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Asset-2@2x.png);">
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="partner-items">
+                    <div class="item-logo" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Asset-1@2x-1.png);">
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="partner-items">
+                    <div class="item-logo" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Asset-3@2x.png);">
+                    </div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</section>
+<section class="interior-section">
+    <div class="container">
+        <div class="interior-items">
+            <div class="item-info">
+                <h2>Awward Winning</h2>
+                <h3>Interior Design</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named
+                    Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <img src="https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Mark-Mcguire@2x.png" alt="">
+                <h4>Mark Mcguire, CEO</h4>
+                <a href="">read more</a>
+            </div>
+            <div class="item-image" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/interior-of-modern-design-room-3d-illustration-e1604308263797.jpg);"></div>
+            <div class="sm-info">
+                <div class="item">
+                    <p>“Far far away, behind the word mountains, <br> far from the countries Vokalia and <br> Consonantia, there live the blind texts.” </p>
+                </div>
+                <h4>Mark M.</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="innerproject-section">
+    <div class="container">
+        <div class="inner-items">
+            <div class="inner-item">
+                <h2>Ready To Start New Project With Inner?</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia <br> and Consonantia, there live the blind texts. </p>
+            </div>
+            <a href="">contact us</a>
+        </div>
+    </div>
+</section>

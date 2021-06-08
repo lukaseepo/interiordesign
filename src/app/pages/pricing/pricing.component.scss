@@ -1,0 +1,190 @@
+@import '../../components/colors.scss';
+@import '../../components/mixins.scss';
+.slider-section {
+    @include slider-section2();
+}
+
+.plan-section {
+    width: 100%;
+    padding: 100px 0px 100px 0px;
+    .plan-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+        @media screen and (max-width: 1200px) {
+            padding: 20px;
+        }
+        .title {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            h2 {
+                color: $black;
+                font-family: "Lato";
+                font-size: 32px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                line-height: 1;
+                @media screen and (max-width: 600px) {
+                    font-size: 25px;
+                }
+            }
+            p {
+                font-family: "Heebo";
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 26px;
+                margin-bottom: 20px;
+                color: $grey2;
+            }
+        }
+        .plan-item {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            @media screen and (max-width: 780px) {
+                grid-template-columns: 1fr;
+            }
+            .item {
+                &:nth-child(1) {
+                    height: 650px;
+                    margin-top: 25px;
+                }
+                &:nth-child(2) {
+                    height: 700px;
+                }
+                &:nth-child(3) {
+                    height: 650px;
+                    margin-top: 25px
+                }
+                @include price-info();
+            }
+        }
+    }
+}
+
+.concept-section {
+    @include concept-section();
+}
+
+.faq-section {
+    width: 100%;
+    .faq-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        @media screen and (max-width: 1200px) {
+            padding: 20px;
+        }
+        @media screen and (max-width: 780px) {
+            grid-template-columns: 1fr;
+            grid-row-gap: 30px;
+        }
+        .faq-image {
+            width: 100%;
+            height: 450.375px;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            position: relative;
+            top: 60px;
+            @media screen and (max-width: 780px) {
+                position: static;
+            }
+        }
+        .faq-info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 0% 30% 0% 10%;
+            @media screen and (max-width: 780px) {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            h2 {
+                color: $black;
+                line-height: 1;
+                font-family: "Lato";
+                font-size: 32px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                @media screen and (max-width: 780px) {
+                    font-size: 28px;
+                }
+            }
+            p {
+                color: $grey2;
+                font-family: "Heebo", Sans-serif;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 26px;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                li {
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid $grey12;
+                    padding: 15px 0px 15px 15px;
+                    cursor: pointer;
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:nth-child(4) {
+                        display: none;
+                    }
+                    &:nth-child(6) {
+                        display: none;
+                    }
+                    i {
+                        color: $black;
+                        font-size: 16px;
+                    }
+                    span {
+                        padding-right: 10px;
+                        font-family: "Heebo";
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: $black;
+                        line-height: 24px;
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.activate {
+    display: block !important;
+    height: max-content !important;
+    animation: fadeInDown 400ms both;
+}
+
+.activatecolor {
+    color: $brown !important;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.contact-section {
+    @include contact-section();
+}

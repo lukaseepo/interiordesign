@@ -1,0 +1,580 @@
+<section class="slider-section">
+    <div class="slider-item">
+        <div class="info">
+            <h2>Interior designs</h2>
+            <h3>from the future</h3>
+            <a href="#">View Portfolio</a>
+        </div>
+    </div>
+    <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>
+            <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/simple-dining-room-interior-design.jpg);" class="item">
+                <div class="background-overlay"></div>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-business-meeting-room-on-office-building.jpg);" class="item">
+                <div class="background-overlay"></div>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/black-wooden-furniture-and-an-industrial-lamp-above-a-coffee-mac.jpg);" class="item">
+                <div class="background-overlay"></div>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-loft-and-luxury-hotel-reception-and-cafe-lounge-restaurant.jpg);" class="item">
+                <div class="background-overlay"></div>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/modern-style-interior-design-3d-rendering-2.jpg);" class="item">
+                <div class="background-overlay"></div>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-loft-and-luxury-hotel-reception-and-vintage-cafe-lounge-restaurant.jpg);" class="item">
+                <div class="background-overlay"></div>
+            </div>
+        </ng-template>
+    </owl-carousel-o>
+</section>
+<section class="design-section">
+    <div class="container">
+        <div class="design-items">
+            <div class="item-image">
+                <div class="item-video">
+                    <div (click)='popUpVideo()' class="video-icon">
+                        <img src="https://image.flaticon.com/icons/png/128/860/860780.png" alt="">
+                    </div>
+                    <h2>Watch VIdeo</h2>
+                </div>
+            </div>
+            <div class="item-info">
+                <div class="info">
+                    <h2>Welcome to Inner</h2>
+                    <h3>Innovative ideas stylish designs</h3>
+                    <p>
+                        Far far away, behind the word mountains, far from the <br> countries Vokalia and Consonantia, there live the blind texts. <br> Separated they live in Bookmarksgrove right at the coast of <br> the Semantics, a large language ocean.
+                    </p>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="projects">
+                    <div data-aos-once='true' data-aos="fade-up" class="item">
+                        <span class="count-up">25 +</span>
+                        <h3>Years of Experience</h3>
+                    </div>
+                    <div data-aos-once='true' data-aos="fade-down" class="item">
+                        <span class="count-up">1,250 +</span>
+                        <h3>Projects Completed</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf='popUp' class="video-popup">
+        <div class="background-overlay"></div>
+        <div (click)='close()' class="close">×</div>
+        <iframe src="https://www.youtube.com/embed/1MTkZPys7mU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+<section class="service-section">
+    <div class="container">
+        <div class="service-items">
+            <div class="item">
+                <h2>our services</h2>
+                <p>Far far away behind the word mountains far <br> from the countries Vokalia and Consonantia <br> there live the blind texts.</p>
+                <a href="">view all</a>
+            </div>
+            <div class="item">
+                <i class="fas fa-home"></i>
+                <h3>Residential Design</h3>
+                <p>We bring the right people together to <br> challenge established thinking and <br> drive transform in 2020</p>
+            </div>
+            <div class="item">
+                <i class="fas fa-cocktail"></i>
+                <h3>Residential Design</h3>
+                <p>We bring the right people together to <br> challenge established thinking and <br> drive transform in 2020</p>
+            </div>
+            <div class="item">
+                <i class="fas fa-desktop"></i>
+                <h3>Residential Design</h3>
+                <p>We bring the right people together to <br> challenge established thinking and <br> drive transform in 2020</p>
+            </div>
+            <div class="item">
+                <i class="fab fa-bitcoin"></i>
+                <h3>Residential Design</h3>
+                <p>We bring the right people together to <br> challenge established thinking and <br> drive transform in 2020</p>
+            </div>
+            <div class="item">
+                <i class="fas fa-tools"></i>
+                <h3>Residential Design</h3>
+                <p>We bring the right people together to <br> challenge established thinking and <br> drive transform in 2020</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="project-section">
+    <div class="project-items">
+        <div class="head-title">
+            <h3>Portfolio</h3>
+            <h2>Latest Projects</h2>
+            <p>Far far away behind the word mountains far from the countries <br> Vokalia and Consonantia there live the blind texts. </p>
+            <mat-tab-group>
+                <mat-tab label="ALL">
+                    <div class="project-item">
+                        <div (click)='activateSlider()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/interior-of-modern-design-living-room-3d-rendering.jpg);">
+                            <div class="background-overlay"></div>
+                            <div class="info">
+                                <h5>Residential Design</h5>
+                                <p>Far far away behind the word mountains far from the countries Vokalia and Consonantia there live the blind texts.</p>
+                            </div>
+                        </div>
+                        <div (click)='activateSlider()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-business-meeting-room-on-office-building.jpg);">
+                            <div class="background-overlay"></div>
+                            <div class="info">
+                                <h5>Corporate</h5>
+                                <p>Far far away behind the word mountains far from the countries Vokalia and Consonantia there live the blind texts.</p>
+                            </div>
+                        </div>
+                        <div (click)='activateSlider()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/black-wooden-furniture-and-an-industrial-lamp-above-a-coffee-mac.jpg);">
+                            <div class="background-overlay"></div>
+                            <div class="info">
+                                <h5>Commerical</h5>
+                                <p>Far far away behind the word mountains far from the countries Vokalia and Consonantia there live the blind texts.</p>
+                            </div>
+                        </div>
+                        <div (click)='activateSlider()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-loft-and-luxury-hotel-reception-and-cafe-lounge-restaurant.jpg);">
+                            <div class="background-overlay"></div>
+                            <div class="info">
+                                <h5>Restaurant</h5>
+                                <p>Far far away behind the word mountains far from the countries Vokalia and Consonantia there live the blind texts.</p>
+                            </div>
+                        </div>
+                        <div (click)='activateSlider()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/modern-style-interior-design-3d-rendering-2.jpg);">
+                            <div class="background-overlay"></div>
+                            <div class="info">
+                                <h5>Residential Design</h5>
+                                <p>Far far away behind the word mountains far from the countries Vokalia and Consonantia there live the blind texts.</p>
+                            </div>
+                        </div>
+                        <div (click)='activateSlider()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-loft-and-luxury-hotel-reception-and-vintage-cafe-lounge-restaurant.jpg);">
+                            <div class="background-overlay"></div>
+                            <div class="info">
+                                <h5>Restaurant</h5>
+                                <p>Far far away behind the word mountains far from the countries Vokalia and Consonantia there live the blind texts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
+                <mat-tab label="RESIDENTIAL">
+                    <div class="project-item">
+                        <div (click)='activateSlider2()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/interior-of-modern-design-living-room-3d-rendering.jpg);">
+                            <div class="background-overlay"></div>
+                            <div class="info">
+                                <h5>Residential Design</h5>
+                                <p>Far far away behind the word mountains far from the countries Vokalia and Consonantia there live the blind texts.</p>
+                            </div>
+                        </div>
+                        <div (click)='activateSlider2()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/modern-style-interior-design-3d-rendering-2.jpg);">
+                            <div class="background-overlay"></div>
+                            <div class="info">
+                                <h5>Residential Design</h5>
+                                <p>Far far away behind the word mountains far from the countries Vokalia and Consonantia there live the blind texts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
+                <mat-tab label="CORPORATE">
+                    <div class="project-item">
+                        <div (click)='activateSlider3()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-business-meeting-room-on-office-building.jpg);">
+                            <div class="background-overlay"></div>
+                            <div class="info">
+                                <h5>Corporate</h5>
+                                <p>Far far away behind the word mountains far from the countries Vokalia and Consonantia there live the blind texts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
+                <mat-tab label="RESTAURANT">
+                    <div class="project-item">
+                        <div (click)='activateSlider4()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-loft-and-luxury-hotel-reception-and-cafe-lounge-restaurant.jpg);">
+                            <div class="background-overlay"></div>
+                            <div class="info">
+                                <h5>Restaurant</h5>
+                                <p>Far far away behind the word mountains far from the countries Vokalia and Consonantia there live the blind texts.</p>
+                            </div>
+                        </div>
+                        <div (click)='activateSlider4()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-loft-and-luxury-hotel-reception-and-vintage-cafe-lounge-restaurant.jpg);">
+                            <div class="background-overlay"></div>
+                            <div class="info">
+                                <h5>Restaurant</h5>
+                                <p>Far far away behind the word <br> mountains far from the countries <br> Vokalia and Consonantia there live <br> the blind texts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
+                <mat-tab label="COMMERICAL">
+                    <div class="project-item">
+                        <div (click)='activateSlider5()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/black-wooden-furniture-and-an-industrial-lamp-above-a-coffee-mac.jpg);">
+                            <div class="background-overlay"></div>
+                            <div class="info">
+                                <h5>Commerical</h5>
+                                <p>Far far away behind the word mountains far from the countries Vokalia and Consonantia there live the blind texts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
+            </mat-tab-group>
+        </div>
+    </div>
+    <div *ngIf='activate' class="slider">
+        <div (click)='closeSlide1()' class="close">×</div>
+        <div class="background-overlay"></div>
+        <owl-carousel-o [options]="customOptions2">
+            <ng-template carouselSlide>
+                <div class="slider-container">
+                    <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/interior-of-modern-design-living-room-3d-rendering.jpg);" class="item-image"></div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="slider-container">
+                    <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-business-meeting-room-on-office-building.jpg);" class="item-image"></div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="slider-container">
+                    <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/black-wooden-furniture-and-an-industrial-lamp-above-a-coffee-mac.jpg);" class="item-image"></div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="slider-container">
+                    <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-loft-and-luxury-hotel-reception-and-cafe-lounge-restaurant.jpg);" class="item-image"></div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="slider-container">
+                    <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/modern-style-interior-design-3d-rendering-2.jpg);" class="item-image"></div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="slider-container">
+                    <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-loft-and-luxury-hotel-reception-and-vintage-cafe-lounge-restaurant.jpg);" class="item-image"></div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+    <div *ngIf='activateSecond' class="slider">
+        <div class="background-overlay"></div>
+        <div (click)='closeSlide2()' class="close">×</div>
+        <owl-carousel-o [options]="customOptions2">
+            <ng-template carouselSlide>
+                <div class="slider-container">
+                    <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/interior-of-modern-design-living-room-3d-rendering.jpg);" class="item-image"></div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="slider-container">
+                    <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/modern-style-interior-design-3d-rendering-2.jpg);" class="item-image"></div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+    <div *ngIf='activateThird' class="slider">
+        <div class="background-overlay"></div>
+        <div (click)='closeSlide3()' class="close">×</div>
+        <owl-carousel-o [options]="customOptions2">
+            <ng-template carouselSlide>
+                <div class="slider-container">
+                    <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-business-meeting-room-on-office-building.jpg);" class="item-image"></div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+    <div *ngIf='activateFourth' class="slider">
+        <div class="background-overlay"></div>
+        <div (click)='closeSlide4()' class="close">×</div>
+        <owl-carousel-o [options]="customOptions2">
+            <ng-template carouselSlide>
+                <div class="slider-container">
+                    <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-loft-and-luxury-hotel-reception-and-cafe-lounge-restaurant.jpg);" class="item-image"></div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="slider-container">
+                    <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-loft-and-luxury-hotel-reception-and-vintage-cafe-lounge-restaurant.jpg);" class="item-image"></div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+    <div *ngIf='activateFifth' class="slider">
+        <div class="background-overlay"></div>
+        <div (click)='closeSlide5()' class="close">×</div>
+        <owl-carousel-o [options]="customOptions2">
+            <ng-template carouselSlide>
+                <div class="slider-container">
+                    <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/black-wooden-furniture-and-an-industrial-lamp-above-a-coffee-mac.jpg);" class="item-image"></div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</section>
+<section class="ourteam-section">
+    <div class="container">
+        <div class="ourteam-items">
+            <div class="item">
+                <h2>Meet our team</h2>
+                <p>
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. </p>
+                <a href="">view all</a>
+            </div>
+            <div class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/aa.jpg);">
+                <div class="background-overlay">
+                    <div class="icons">
+                        <div class="icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3>Maximus Holden</h3>
+                    <p>
+                        Interior Designer </p>
+                </div>
+            </div>
+            <div class="item" data-aos="fade-up" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/bb.jpg);">
+                <div class="background-overlay">
+                    <div class="icons">
+                        <div class="icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3>Bryn Mccormick</h3>
+                    <p>
+                        Project Manager </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="partner-section">
+    <div class="container">
+        <owl-carousel-o [options]="customOptionsLogo">
+            <ng-template carouselSlide>
+                <div class="partner-items">
+                    <div class="item-logo" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Asset-5@2x.png);">
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="partner-items">
+                    <div class="item-logo" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Asset-2@2x.png);">
+                    </div>
+                </div>
+
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="partner-items">
+                    <div class="item-logo" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Asset-1@2x-1.png);">
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="partner-items">
+                    <div class="item-logo" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Asset-3@2x.png);">
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="partner-items">
+                    <div class="item-logo" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Asset-4@2x.png);">
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="partner-items">
+                    <div class="item-logo" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Asset-2@2x.png);">
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="partner-items">
+                    <div class="item-logo" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Asset-1@2x-1.png);">
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="partner-items">
+                    <div class="item-logo" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Asset-3@2x.png);">
+                    </div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</section>
+<section class="concept-section">
+    <div class="container">
+        <div class="concept-items">
+            <div class="title">
+                <h2>how we work</h2>
+                <p>Far far away behind the word mountains far from the countries Vokalia and <br> Consonantia there live the blind texts.</p>
+            </div>
+            <div class="concept-item">
+                <div class="item">
+                    <h2>01</h2>
+                    <h3>Concept</h3>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                </div>
+                <div class="item">
+                    <h2>02</h2>
+                    <h3>Design</h3>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                </div>
+                <div class="item">
+                    <h2>03</h2>
+                    <h3>Development</h3>
+                    <p>Far far away, behind the word mountains, far <br> from the countries Vokalia and Consonantia, <br> there live the blind texts.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="testimonial-section">
+    <div class="testimonial-items">
+        <div class="item-image"></div>
+        <div class="item">
+            <h2>Testimonials</h2>
+            <p>Far far away behind the word mountains far from the <br> countries Vokalia and Consonantia there live the blind <br> texts. </p>
+            <owl-carousel-o [options]="customOptionsInfo">
+                <ng-template carouselSlide>
+                    <div class="info">
+                        <p>A wonderful serenity has taken possession of my entire soul, <br> like these sweet mornings of spring which I enjoy with my <br> whole heart.</p>
+                        <div class="profile">
+                            <div class="profile-info">
+                                <img src="https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Image-4.png" alt="">
+                                <div class="sm-info">
+                                    <strong>Jonathan Doe</strong>
+                                    <span>Manager</span>
+                                </div>
+                            </div>
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="info">
+                        <p>A wonderful serenity has taken possession of my entire soul, <br> like these sweet mornings of spring which I enjoy with my<br> whole heart.</p>
+                        <div class="profile">
+                            <div class="profile-info">
+                                <img src="https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Image-1.png" alt="">
+                                <div class="sm-info">
+                                    <strong>Albert Junior</strong>
+                                    <span>Designer</span>
+                                </div>
+                            </div>
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="info">
+                        <p>A wonderful serenity has taken possession of my entire soul,<br> like these sweet mornings of spring which I enjoy with my<br> whole heart.</p>
+                        <div class="profile">
+                            <div class="profile-info">
+                                <img src="https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Image.jpg" alt="">
+                                <div class="sm-info">
+                                    <strong>Clara Jepsen</strong>
+                                    <span>Ceo</span>
+                                </div>
+                            </div>
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="info">
+                        <p>A wonderful serenity has taken possession of my entire soul,<br> like these sweet mornings of spring which I enjoy with my<br> whole heart.</p>
+                        <div class="profile">
+                            <div class="profile-info">
+                                <img src="https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/image-3.png" alt="">
+                                <div class="sm-info">
+                                    <strong>Steven Chaw</strong>
+                                    <span>Manager</span>
+                                </div>
+                            </div>
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</section>
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-items">
+            <div class="contact-info">
+                <h2>Get in touch</h2>
+                <p>
+                    Far far away behind the word mountains far from the countries <br> Vokalia and Consonantia there live the blind texts. </p>
+                <ul class="contact">
+                    <li>
+                        <h4>Ubud, Bali</h4>
+                    </li>
+                    <li>
+                        <span><i aria-hidden="true" class="fas fa-phone-alt"></i></span>
+                        <span>(+62) 81 2345 1234</span>
+                    </li>
+                    <li>
+                        <span><i aria-hidden="true" class="fas fa-envelope"></i></span>
+                        <span>Contact@domain.com</span>
+                    </li>
+                    <li>
+                        <span><i aria-hidden="true" class="fas fa-map-marker-alt"></i></span>
+                        <span>Jl. Raya Ubud No.88, Bali 80571</span>
+                    </li>
+                </ul>
+                <ul class="contact">
+                    <li>
+                        <h4>Denpasar, Bali </h4>
+                    </li>
+                    <li>
+                        <span><i aria-hidden="true" class="fas fa-phone-alt"></i></span>
+                        <span>(+62) 81 2345 1234</span>
+                    </li>
+                    <li>
+                        <span><i aria-hidden="true" class="fas fa-envelope"></i></span>
+                        <span>Contact@domain.com</span>
+                    </li>
+                    <li>
+                        <span><i aria-hidden="true" class="fas fa-map-marker-alt"></i></span>
+                        <span>Jl. Raya Ubud No.88, Bali 80571</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="form">
+                <form>
+                    <input type="text" name="your-name" size="40" aria-required="true" aria-invalid="false" placeholder="Your Name">
+                    <input type="email" name="your-email" size="40" aria-required="true" aria-invalid="false" placeholder="Your Email">
+                    <input type="text" name="your-subject" size="40" aria-required="true" aria-invalid="false" placeholder="Your Subject">
+                    <textarea name="your-message" cols="40" rows="10" aria-invalid="false" placeholder="Your Message"></textarea>
+                    <button>send message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

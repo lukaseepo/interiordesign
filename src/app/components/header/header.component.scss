@@ -1,0 +1,233 @@
+@import '../colors.scss';
+@import '../mixins.scss';
+.active {
+    background-color: black;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    background-color: $black;
+}
+
+.activate {
+    color: $brown !important;
+    i {
+        color: $brown !important;
+    }
+}
+
+.header-section {
+    width: 100%;
+    .header-items {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        @media screen and (max-width: 1250px) {
+            padding: 20px;
+        }
+        .navbar-mobile {
+            display: none;
+            width: 100%;
+            height: 100%;
+            justify-content: flex-end;
+            @media screen and (max-width: 1130px) {
+                display: flex;
+            }
+            li {
+                border-radius: 0px;
+                border-width: 0px 0px 0px 0px;
+                background-color: $white;
+                width: max-content;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 8px;
+                cursor: pointer;
+                i {
+                    font-size: 24px;
+                    color: $brown;
+                }
+            }
+        }
+        .logo {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            img {
+                width: 101.516px;
+                height: 34.219px;
+                @media screen and (max-width: 724px) {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .nav-bar {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-top: 30px;
+            @media screen and (max-width: 1130px) {
+                display: none;
+            }
+            li {
+                display: flex;
+                position: relative;
+                height: 50px;
+                transition: 2s;
+                &:hover {
+                    transition: 2s;
+                    .projects {
+                        display: block;
+                        animation: fadeInDown 400ms both;
+                    }
+                    .home {
+                        display: block;
+                        animation: fadeInDown 400ms both;
+                    }
+                    .pages {
+                        display: block;
+                        animation: fadeInDown 400ms both;
+                    }
+                    .contact {
+                        display: block;
+                        animation: fadeInDown 400ms both;
+                    }
+                }
+                @keyframes fadeInDown {
+                    from {
+                        opacity: 0;
+                        transform: translateY(-20px);
+                    }
+                    to {
+                        opacity: 1;
+                    }
+                }
+                .pages {
+                    @include nav-bar2();
+                }
+                .projects {
+                    @include nav-bar();
+                }
+                .home {
+                    @include nav-bar();
+                }
+                .contact {
+                    @include nav-bar();
+                }
+                a {
+                    display: flex;
+                    color: $white;
+                    font-family: 'Lato';
+                    transition: 0.5s;
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    padding: 0px 0px 0px 40px;
+                    i {
+                        color: $white;
+                        margin-left: 6px;
+                        font-weight: 900;
+                        font-style: normal;
+                        font-size: 11px;
+                        padding-top: 2px;
+                        transition: 0.5s;
+                    }
+                    &:hover {
+                        color: $brown;
+                        transition: 0.5s;
+                        i {
+                            color: $brown;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.left-bar {
+    background-color: $white;
+    width: 350px;
+    position: fixed;
+    left: -400px;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+    overflow-y: auto;
+    flex-direction: column;
+    transition: 1s;
+    .top-panel {
+        width: 100%;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        img {
+            width: 101.516px;
+            height: 34.219px;
+            margin-top: 20px;
+        }
+        button {
+            width: 40px;
+            height: 40px;
+            padding: 8px;
+            margin: 15px;
+            background-color: $black;
+            color: $white;
+            transition: 0.5s;
+            cursor: pointer;
+            &:hover {
+                transition: 0.5s;
+                background-color: $white;
+                color: $black;
+                border: 1px solid $black
+            }
+        }
+    }
+    .nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        li {
+            display: flex;
+            line-height: 1.5;
+            cursor: pointer;
+            a {
+                color: $black;
+                padding: 10px 30px 15px 30px;
+                font-family: "Lato";
+                font-size: 12px;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+            i {
+                color: $black;
+                padding: 4px 18px;
+                width: 50px;
+                height: max-content;
+                border: 1px solid $black;
+                border-radius: 8px;
+                margin-top: 7px;
+            }
+        }
+        ul {
+            background-color: $white;
+            box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 10%);
+            position: relative;
+            width: 100%;
+            display: none;
+        }
+    }
+}
+
+.activated {
+    display: block !important;
+}
+
+.enable {
+    transition: 1s;
+    left: 0px;
+}

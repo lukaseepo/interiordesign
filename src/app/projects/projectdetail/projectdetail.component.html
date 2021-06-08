@@ -1,0 +1,234 @@
+<section class="slider-section">
+    <div class="background-overlay"></div>
+    <div class="slider-item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/minimalist-living-room.jpg);">
+        <div class="container">
+            <div class="info">
+                <h2>project detail</h2>
+                <ul class="page-info">
+                    <li>
+                        <span>Home</span>
+                    </li>
+                    <li>
+                        <i aria-hidden="true" class="fas fa-angle-right"></i>
+                        <span>Project Detail</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="image-section">
+    <div class="container">
+        <div class="image-items">
+            <div (click)='activateSlide()' class="image" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-luxury-and-modern-living-room-with-good-design-leather-sofa-e1604308460479.jpg);"></div>
+            <div class="image-item">
+                <div (click)='activateSlide2()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-luxury-and-modern-living-room-with-good-design-leather-sofa-1-e1604308468666.jpg);"></div>
+                <div (click)='activateSlide3()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-luxury-and-modern-living-room-with-good-design-leather-sofa-2-e1604308477592.jpg);"></div>
+            </div>
+        </div>
+    </div>
+    <div class="slide" *ngIf='activate'>
+        <ul id='share' class="share">
+            <li>
+                <i class="fab fa-facebook-square"></i>
+                <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Ftemplatekit.jegtheme.com%252Finner%252Fproject-detail%252F%2523elementor-action%253Aaction%253Dlightbox%2526settings%253DeyJpZCI6InNpbmdsZS1pbWciLCJ1cmwiOiJodHRwczovL3RlbXBsYXRla2l0LmplZ3RoZW1lLmNvbS9pbm5lci93cC1jb250ZW50L3VwbG9hZHMvc2l0ZXMvMTUvMjAyMC8xMC8zZC1yZW5kZXJpbmctbHV4dXJ5LWFuZC1tb2Rlcm4tbGl2aW5nLXJvb20td2l0aC1nb29kLWRlc2lnbi1sZWF0aGVyLXNvZmEuanBnIn0%253D&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=ka_GE"
+                    target="_blank">Share on Facebook</a>
+            </li>
+            <li>
+                <i class="fab fa-twitter"></i>
+                <a href="https://twitter.com/intent/tweet?text=%20https%3A%2F%2Ftemplatekit.jegtheme.com%2Finner%2Fproject-detail%2F%23elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6InNpbmdsZS1pbWciLCJ1cmwiOiJodHRwczovL3RlbXBsYXRla2l0LmplZ3RoZW1lLmNvbS9pbm5lci93cC1jb250ZW50L3VwbG9hZHMvc2l0ZXMvMTUvMjAyMC8xMC8zZC1yZW5kZXJpbmctbHV4dXJ5LWFuZC1tb2Rlcm4tbGl2aW5nLXJvb20td2l0aC1nb29kLWRlc2lnbi1sZWF0aGVyLXNvZmEuanBnIn0%3D"
+                    target="_blank">Share on Twitter</a>
+            </li>
+            <li>
+                <i class="fab fa-pinterest"></i>
+                <a href="https://www.pinterest.com/pin/create/button/?url=&media=https%3A%2F%2Ftemplatekit.jegtheme.com%2Finner%2Fwp-content%2Fuploads%2Fsites%2F15%2F2020%2F10%2F3d-rendering-luxury-and-modern-living-room-with-good-design-leather-sofa.jpg" target="_blank">Pin it</a>
+            </li>
+            <li>
+                <i class="fas fa-download"></i>
+                <a href="../../../assets/image.jpg" download>Download image</a>
+            </li>
+        </ul>
+        <div class="settings">
+            <i (click)='zoomIn()' class="fas fa-search-plus"></i>
+            <i (click)='activateClass()' class="fas fa-share"></i>
+            <i (click)='close()' class="fas fa-times"></i>
+        </div>
+        <div class="background-overlay"></div>
+        <div id="slideimage" class="slide-image" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-luxury-and-modern-living-room-with-good-design-leather-sofa-e1604308460479.jpg);"></div>
+        <div class="sm-info">
+            <h3>3d rendering luxury and modern living room with good design leather sofa</h3>
+            <p>3d rendering luxury and modern living room with good design leather sofa</p>
+        </div>
+    </div>
+    <div class="slide" *ngIf='activate2'>
+        <ul id="share" class="share">
+            <li>
+                <i class="fab fa-facebook-square"></i>
+                <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Ftemplatekit.jegtheme.com%252Finner%252Fproject-detail%252F%2523elementor-action%253Aaction%253Dlightbox%2526settings%253DeyJpZCI6InNpbmdsZS1pbWciLCJ1cmwiOiJodHRwczovL3RlbXBsYXRla2l0LmplZ3RoZW1lLmNvbS9pbm5lci93cC1jb250ZW50L3VwbG9hZHMvc2l0ZXMvMTUvMjAyMC8xMC8zZC1yZW5kZXJpbmctbHV4dXJ5LWFuZC1tb2Rlcm4tbGl2aW5nLXJvb20td2l0aC1nb29kLWRlc2lnbi1sZWF0aGVyLXNvZmEuanBnIn0%253D&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=ka_GE"
+                    target="_blank">Share on Facebook</a>
+            </li>
+            <li>
+                <i class="fab fa-twitter"></i>
+                <a href="https://twitter.com/intent/tweet?text=%20https%3A%2F%2Ftemplatekit.jegtheme.com%2Finner%2Fproject-detail%2F%23elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6InNpbmdsZS1pbWciLCJ1cmwiOiJodHRwczovL3RlbXBsYXRla2l0LmplZ3RoZW1lLmNvbS9pbm5lci93cC1jb250ZW50L3VwbG9hZHMvc2l0ZXMvMTUvMjAyMC8xMC8zZC1yZW5kZXJpbmctbHV4dXJ5LWFuZC1tb2Rlcm4tbGl2aW5nLXJvb20td2l0aC1nb29kLWRlc2lnbi1sZWF0aGVyLXNvZmEuanBnIn0%3D"
+                    target="_blank">Share on Twitter</a>
+            </li>
+            <li>
+                <i class="fab fa-pinterest"></i>
+                <a href="https://www.pinterest.com/pin/create/button/?url=&media=https%3A%2F%2Ftemplatekit.jegtheme.com%2Finner%2Fwp-content%2Fuploads%2Fsites%2F15%2F2020%2F10%2F3d-rendering-luxury-and-modern-living-room-with-good-design-leather-sofa.jpg" target="_blank">Pin it</a>
+            </li>
+            <li>
+                <i class="fas fa-download"></i>
+                <a href="../../../assets/image.jpg" download>Download image</a>
+            </li>
+        </ul>
+        <div class="settings">
+            <i (click)='zoomIn()' class="fas fa-search-plus"></i>
+            <i (click)='activateClass()' class="fas fa-share"></i>
+            <i (click)='close2()' class="fas fa-times"></i>
+        </div>
+        <div class="background-overlay"></div>
+        <div id="slideimage" class="slide-image" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-luxury-and-modern-living-room-with-good-design-leather-sofa-1-e1604308468666.jpg);"></div>
+        <div class="sm-info">
+            <h3>3d rendering luxury and modern living room with good design leather sofa</h3>
+            <p>3d rendering luxury and modern living room with good design leather sofa</p>
+        </div>
+    </div>
+    <div class="slide" *ngIf='activate3'>
+        <div class="settings">
+            <i (click)='zoomIn()' class="fas fa-search-plus"></i>
+            <i (click)='activateClass()' class="fas fa-share"></i>
+            <i (click)='close3()' class="fas fa-times"></i>
+        </div>
+        <ul id="share" class="share">
+            <li>
+                <i class="fab fa-facebook-square"></i>
+                <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Ftemplatekit.jegtheme.com%252Finner%252Fproject-detail%252F%2523elementor-action%253Aaction%253Dlightbox%2526settings%253DeyJpZCI6InNpbmdsZS1pbWciLCJ1cmwiOiJodHRwczovL3RlbXBsYXRla2l0LmplZ3RoZW1lLmNvbS9pbm5lci93cC1jb250ZW50L3VwbG9hZHMvc2l0ZXMvMTUvMjAyMC8xMC8zZC1yZW5kZXJpbmctbHV4dXJ5LWFuZC1tb2Rlcm4tbGl2aW5nLXJvb20td2l0aC1nb29kLWRlc2lnbi1sZWF0aGVyLXNvZmEuanBnIn0%253D&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=ka_GE"
+                    target="_blank">Share on Facebook</a>
+            </li>
+            <li>
+                <i class="fab fa-twitter"></i>
+                <a href="https://twitter.com/intent/tweet?text=%20https%3A%2F%2Ftemplatekit.jegtheme.com%2Finner%2Fproject-detail%2F%23elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6InNpbmdsZS1pbWciLCJ1cmwiOiJodHRwczovL3RlbXBsYXRla2l0LmplZ3RoZW1lLmNvbS9pbm5lci93cC1jb250ZW50L3VwbG9hZHMvc2l0ZXMvMTUvMjAyMC8xMC8zZC1yZW5kZXJpbmctbHV4dXJ5LWFuZC1tb2Rlcm4tbGl2aW5nLXJvb20td2l0aC1nb29kLWRlc2lnbi1sZWF0aGVyLXNvZmEuanBnIn0%3D"
+                    target="_blank">Share on Twitter</a>
+            </li>
+            <li>
+                <i class="fab fa-pinterest"></i>
+                <a href="https://www.pinterest.com/pin/create/button/?url=&media=https%3A%2F%2Ftemplatekit.jegtheme.com%2Finner%2Fwp-content%2Fuploads%2Fsites%2F15%2F2020%2F10%2F3d-rendering-luxury-and-modern-living-room-with-good-design-leather-sofa.jpg" target="_blank">Pin it</a>
+            </li>
+            <li>
+                <i class="fas fa-download"></i>
+                <a href="../../../assets/image.jpg" download>Download image</a>
+            </li>
+        </ul>
+        <div class="background-overlay"></div>
+        <div id="slideimage" class="slide-image" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-luxury-and-modern-living-room-with-good-design-leather-sofa-2-e1604308477592.jpg);"></div>
+        <div class="sm-info">
+            <h3>3d rendering luxury and modern living room with good design leather sofa</h3>
+            <p>3d rendering luxury and modern living room with good design leather sofa</p>
+        </div>
+    </div>
+</section>
+<section class="projectinfo-section">
+    <div class="container">
+        <div class="projectinfo-items">
+            <div class="item-info">
+                <h2>Project Info</h2>
+                <p>Far far away, behind the word mountains, far from the <br> countries Vokalia and Consonantia, there live the blind texts. </p>
+                <div class="client-item">
+                    <div class="item">
+                        <div class="info">
+                            <i class="fas fa-user-friends"></i>
+                            <div class="sm-info">
+                                <h3>Cilient</h3>
+                                <p>Pablo Chaesar</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="sm-info">
+                                <h3>Location</h3>
+                                <p>Seminyak, Kuta</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="info">
+                            <i class="fas fa-user-friends"></i>
+                            <div class="sm-info">
+                                <h3>Project Year</h3>
+                                <p>2019</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <i class="fas fa-dollar-sign"></i>
+                            <div class="sm-info">
+                                <h3>Price Value</h3>
+                                <p>$250.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="info">
+                            <i class="far fa-building"></i>
+                            <div class="sm-info">
+                                <h3>Surface Area</h3>
+                                <p>400,000 m2</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <i class="fas fa-user"></i>
+                            <div class="sm-info">
+                                <h3>Project Head</h3>
+                                <p>Maximus Holden</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-description">
+                <h2>project description</h2>
+                <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like
+                    mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment</p>
+                <ul class="question-marks">
+                    <li>
+                        <i class="fas fa-check"></i>
+                        <span>Small river named Duden flows by their place</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        <span>The Big Oxmox advised her not to do so</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        <span>Question Marks and devious Semikoli</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="share-section">
+    <div class="container">
+        <div class="share-items">
+            <div class="share-item">
+                <h2>Share to </h2>
+                <ul class="circles">
+                    <li class="circle">
+                        <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Ftemplatekit.jegtheme.com%252Finner%252Fproject-detail%252F%26t%3DProject%2BDetail%2B%25E2%2580%2593%2BInner&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=ka_GE">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="circle">
+                        <a href="https://twitter.com/share?url=https%3A%2F%2Ftemplatekit.jegtheme.com%2Finner%2Fproject-detail%2F&text=Project%20Detail%20%E2%80%93%20Inner">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="circle">
+                        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Ftemplatekit.jegtheme.com%2Finner%2Fproject-detail%2F&text=Project%20Detail%20%E2%80%93%20Inner&summary=&mini=true">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

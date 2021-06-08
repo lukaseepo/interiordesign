@@ -1,0 +1,14 @@
+@import '../../components/mixins.scss';
+@import '../../components/colors.scss';
+.slider-section {
+    @include slider-section2();
+}
+
+.contact-section {
+    @include contact-section3();
+}
+
+.innerproject-section {
+    margin-top: 8em;
+    @include innerproject-section();
+}

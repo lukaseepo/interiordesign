@@ -1,0 +1,147 @@
+@import '../../components/colors.scss';
+@import '../../components/mixins.scss';
+.slider-section {
+    @include slider-section2();
+}
+
+.faq-section {
+    width: 100%;
+    padding: 100px 0px 100px 0px;
+    .faq-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+        .title {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h2 {
+                color: $black;
+                line-height: 1;
+                font-family: "Lato";
+                font-size: 32px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                @media screen and (max-width: 780px) {
+                    font-size: 28px;
+                }
+            }
+            p {
+                text-align: center;
+                color: $grey2;
+                font-family: "Heebo";
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 26px;
+            }
+        }
+        .faq-item {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 50px;
+            @media screen and (max-width: 780px) {
+                grid-template-columns: 1fr;
+            }
+            .item {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                li {
+                    display: flex;
+                    align-items: center;
+                    padding: 15px 0px 15px 15px;
+                    border-bottom: 1px solid $grey12;
+                    cursor: pointer;
+                    p {
+                        font-family: "Heebo";
+                        font-size: 16px;
+                        font-weight: 300;
+                        color: $grey2;
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:nth-child(4) {
+                        display: none;
+                    }
+                    &:nth-child(6) {
+                        display: none;
+                    }
+                    i {
+                        color: $black;
+                        line-height: 1;
+                        font-size: 16px;
+                        margin-right: 10px;
+                    }
+                    span {
+                        padding-right: 10px;
+                        font-family: "Heebo";
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: $black;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.activate {
+    display: block !important;
+    padding: 20px 40px 0px 15px !important;
+    animation: fadeInDown 400ms both;
+}
+
+.activatecolor {
+    color: $brown !important;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.newproject-section {
+    width: 100%;
+    background-color: $black;
+    padding: 60px 0px 60px 0px;
+    .newproject-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        .newproject-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h2 {
+                color: $white;
+                font-family: "Heebo";
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 1;
+            }
+            p {
+                text-align: center;
+                color: $grey2;
+                font-family: "Heebo";
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 1.5;
+            }
+            a {
+                @include hoverbutton2();
+            }
+        }
+    }
+}

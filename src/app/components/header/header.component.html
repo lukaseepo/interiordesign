@@ -1,0 +1,134 @@
+<header [class.active]='activated' class="header-section">
+    <div class="container">
+        <div class="header-items">
+            <div class="logo">
+                <img width="16.64vh" height="5.6vh" src="https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Logo-header.png" alt="">
+            </div>
+            <ul (click)='enableLeftBar()' class="navbar-mobile">
+                <li><i class="fas fa-bars"></i></li>
+            </ul>
+            <ul class="nav-bar">
+                <li>
+                    <a routerLinkActive="activate" [routerLink]='[""]' [routerLinkActiveOptions]='{exact:true}'>home <i class="fas fa-chevron-down"></i></a>
+                    <ul class="home">
+                        <li>
+                            <a routerLinkActive="activate" [routerLinkActiveOptions]='{exact:true}' [routerLink]='[""]' href="">Home – Layout 1</a>
+                        </li>
+                        <li>
+                            <a routerLinkActive="activate" [routerLink]='["home2"]' href="">Home – Layout 2</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a routerLinkActive="activate" [routerLink]='["about"]'>about us</a>
+                </li>
+                <li>
+                    <a routerLinkActive="activate" [routerLink]='["service"]'>services</a>
+                </li>
+                <li>
+                    <a routerLinkActive="activate" [routerLinkActiveOptions]='{exact:true}' [routerLink]="['projects']" href="">projects <i class="fas fa-chevron-down"></i></a>
+                    <ul class="projects">
+                        <li>
+                            <a routerLinkActive="activate" [routerLinkActiveOptions]='{exact:true}' [routerLink]="['projects']" href="">Projects</a>
+                        </li>
+                        <li>
+                            <a routerLinkActive="activate" [routerLink]="['projectdetail']">project detail</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a routerLinkActive="activate" [routerLink]="['ourteam']" [routerLinkActiveOptions]='{exact:true}' href="">pages <i class="fas fa-chevron-down"></i></a>
+                    <ul class="pages">
+                        <li>
+                            <a routerLinkActive="activate" [routerLink]="['ourteam']" [routerLinkActiveOptions]='{exact:true}' href="">our team</a>
+                        </li>
+                        <li>
+                            <a routerLinkActive="activate" [routerLink]="['pricing']" href="">pricing</a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['FAQ']" routerLinkActive="activate" href="">faq</a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['404-page']" routerLinkActive="activate" href="">404 page</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a routerLinkActive="activate" [routerLinkActiveOptions]='{exact:true}' [routerLink]="['contact-us']">contact <i class="fas fa-chevron-down"></i></a>
+                    <ul class="contact">
+                        <li>
+                            <a [routerLinkActiveOptions]='{exact:true}' routerLinkActive="activate" [routerLink]="['contact-us']" href="">contact us</a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['contact-us2']" routerLinkActive="activate">contact us 2</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div id="leftBar" class="left-bar">
+    <div class="top-panel">
+        <img src="https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Logo-footer@.png" alt="">
+        <button (click)='disableLeftBar()'>X</button>
+    </div>
+    <ul class="nav">
+        <li (click)='activate1()'>
+            <a href="">home</a>
+            <i class="fas fa-chevron-down"></i>
+        </li>
+        <ul id="activated1">
+            <li>
+                <a href="">home - layout 1</a>
+            </li>
+            <li><a href="">home - layout 2</a></li>
+        </ul>
+        <li>
+            <a href="">about us</a>
+        </li>
+        <li>
+            <a href="">services</a>
+        </li>
+        <li (click)='activate2()'>
+            <a href="">projects</a>
+            <i class="fas fa-chevron-down"></i>
+        </li>
+        <ul id="activated2">
+            <li>
+                <a href="">projects</a>
+            </li>
+            <li><a href="">project detail</a></li>
+        </ul>
+        <li (click)='activate3()'>
+            <a href="">pages</a>
+            <i class="fas fa-chevron-down"></i>
+        </li>
+        <ul id="activated3">
+            <li>
+                <a href="">our team</a>
+            </li>
+            <li>
+                <a href="">pricing</a>
+            </li>
+            <li>
+                <a href="">faq</a>
+            </li>
+            <li>
+                <a href="">404</a>
+            </li>
+        </ul>
+        <li (click)='activate4()'>
+            <a href="">contact</a>
+            <i class="fas fa-chevron-down"></i>
+        </li>
+        <ul id="activated4">
+            <li>
+                <a href="">contact 1</a>
+            </li>
+            <li>
+                <a href="">contact 2</a>
+            </li>
+        </ul>
+    </ul>
+</div>

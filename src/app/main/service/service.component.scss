@@ -1,0 +1,464 @@
+@import '../../components/colors.scss';
+@import '../../components/mixins.scss';
+.slider-section {
+    @include slider-section2();
+}
+
+.service-section {
+    width: 100%;
+    margin-top: 7em;
+    .service-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 40px;
+        padding-top: 6em;
+        padding-bottom: 6em;
+        @media screen and (max-width: 1200px) {
+            padding: 20px;
+        }
+        .title {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            h2 {
+                color: $black;
+                font-family: "Lato";
+                line-height: 1;
+                font-size: 32px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                @media screen and (max-width: 600px) {
+                    font-size: 25px;
+                }
+            }
+            p {
+                font-family: "Heebo";
+                font-size: 16px;
+                font-weight: 300;
+                color: $grey2;
+                line-height: 1.5;
+            }
+        }
+        .service-item {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+            @media screen and (max-width: 780px) {
+                grid-template-columns: 1fr 1fr;
+            }
+            @media screen and (max-width: 620px) {
+                grid-template-columns: 1fr;
+            }
+            .item {
+                @include service-item();
+            }
+        }
+    }
+}
+
+.concept-section {
+    width: 100%;
+    background-color: $grey6;
+    padding: 100px 0px 100px 0px;
+    .concept-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        align-items: center;
+        @media screen and (max-width: 1200px) {
+            padding: 20px;
+        }
+        @media screen and (max-width: 780px) {
+            grid-template-columns: 1fr;
+        }
+        .item-info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            @media screen and (max-width: 600px) {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            .title {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                @media screen and (max-width: 600px) {
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+                h2 {
+                    font-size: 2rem;
+                    color: $black;
+                    font-family: "Lato";
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    line-height: 1;
+                    @media screen and (max-width: 600px) {
+                        font-size: 1.3rem;
+                    }
+                }
+                p {
+                    color: $grey2;
+                    font-family: "Heebo";
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 26px;
+                }
+            }
+            .info {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-row-gap: 25px;
+                margin-top: 2em;
+                .item {
+                    display: flex;
+                    width: 100%;
+                    @media screen and (max-width: 600px) {
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    h2 {
+                        color: $grey6;
+                        font-family: "Roboto";
+                        font-size: 96px;
+                        font-weight: 600;
+                        text-shadow: 0px 0px 2px rgb(0 0 0 / 30%);
+                        line-height: 1;
+                        @media screen and (max-width: 600px) {
+                            font-size: 45px;
+                        }
+                    }
+                    .sm-info {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        padding-left: 30px;
+                        @media screen and (max-width: 600px) {
+                            padding-left: 0px;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                        }
+                        h3 {
+                            font-family: "Lato";
+                            font-size: 24px;
+                            font-weight: 600;
+                            color: $black;
+                            line-height: 1.2;
+                            margin-top: .5rem;
+                            @media screen and (max-width: 600px) {
+                                font-size: 20px;
+                            }
+                        }
+                        p {
+                            color: $grey5;
+                            font-family: "Heebo";
+                            font-size: 16px;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+        .item-image {
+            width: 100%;
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 626.969px;
+        }
+    }
+}
+
+.testimonial-section {
+    width: 100%;
+    padding: 100px 0px 100px 0px;
+    .testimonial-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        .title {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            h2 {
+                color: $black;
+                font-family: "Lato";
+                font-size: 32px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                line-height: 1;
+                @media screen and (max-width: 600px) {
+                    font-size: 26px;
+                }
+            }
+            p {
+                text-align: center;
+                color: $grey2;
+                font-family: "Heebo", Sans-serif;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 26px;
+            }
+        }
+        .testimonial-item {
+            width: 100%;
+            overflow: hidden;
+            .item {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                @media screen and (max-width: 600px) {
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+                p {
+                    font-family: "Heebo";
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: $grey2;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                    line-height: 1.5;
+                }
+                .item-profile {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    @media screen and (max-width: 600px) {
+                        justify-content: center;
+                    }
+                    .profile {
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        @media screen and (max-width: 600px) {
+                            justify-content: center;
+                        }
+                        img {
+                            border-radius: 50%;
+                            height: 70px;
+                            width: 70px
+                        }
+                        .sm-info {
+                            display: flex;
+                            flex-direction: column;
+                            padding-left: 25px;
+                            @media screen and (max-width: 600px) {
+                                align-items: center;
+                                justify-content: center;
+                            }
+                            strong {
+                                font-size: 16px;
+                                font-weight: 500;
+                                margin-bottom: 5px;
+                                color: $black2;
+                                line-height: 1;
+                                font-family: 'Heebo';
+                            }
+                            span {
+                                font-size: 14px;
+                                font-weight: 300;
+                                color: $grey9;
+                                font-family: 'Heebo';
+                            }
+                        }
+                    }
+                    i {
+                        color: $brown;
+                        font-size: 40px;
+                        margin-right: 1.3em;
+                        @media screen and (max-width: 600px) {
+                            font-size: 33px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.achivement-section {
+    @include achivement-section();
+}
+
+.contact-section {
+    width: 100%;
+    background-color: $black;
+    .contact-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        @media screen and (max-width: 1200px) {
+            padding: 20px;
+        }
+        padding: 180px 0px 100px 0px;
+        @media screen and (max-width: 780px) {
+            grid-template-columns: 1fr;
+        }
+        .contact-info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @media screen and (max-width: 600px) {
+                align-items: center;
+                text-align: center;
+            }
+            h2 {
+                color: $white;
+                font-family: "Lato";
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 2rem;
+                @media screen and (max-width: 600px) {
+                    font-size: 1rem;
+                }
+            }
+            p {
+                font-family: "Heebo", Sans-serif;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 26px;
+                color: $grey2;
+            }
+            .contact {
+                display: flex;
+                flex-direction: column;
+                @media screen and (max-width: 600px) {
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                }
+                li {
+                    display: flex;
+                    padding-bottom: calc(10px/2);
+                    margin-top: calc(10px/2);
+                    h4 {
+                        color: $white;
+                        font-family: "Lato", Sans-serif;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        @media screen and (max-width: 600px) {
+                            font-size: 15px;
+                        }
+                    }
+                    span {
+                        padding-left: 5px;
+                        color: $grey2;
+                        font-size: 16px;
+                        font-weight: 300;
+                        font-family: 'Heebo';
+                        line-height: 1.5;
+                        transition: 0.5s;
+                        &:hover {
+                            color: $brown;
+                            transition: 0.5s;
+                        }
+                        i {
+                            color: $brown;
+                            font-size: 14px;
+                            width: 1.25em;
+                        }
+                    }
+                }
+            }
+        }
+        .form {
+            width: 100%;
+            @media screen and (max-width: 600px) {
+                padding: 20px;
+            }
+            @media screen and (max-width: 400px) {
+                padding: 0px;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                padding: 70px 70px 70px 70px;
+                background-color: $white;
+                @media screen and (max-width: 600px) {
+                    justify-content: center;
+                    align-items: center;
+                }
+                @media screen and (max-width: 600px) {
+                    padding: 40px;
+                }
+                input {
+                    font-family: "Roboto";
+                    font-weight: 300;
+                    width: 100%;
+                    height: 50px;
+                    color: $grey2;
+                    padding-left: 30px;
+                    font-size: 1rem;
+                    display: block;
+                    background-color: $white;
+                    border: 1px solid $grey7;
+                    margin-bottom: 20px;
+                    transition: 0.5s;
+                    @media screen and (max-width: 600px) {
+                        font-size: 0.8rem;
+                    }
+                    &:focus {
+                        border: 1px solid $black;
+                    }
+                    &:hover {
+                        border: 1px solid $black;
+                        transition: 0.5s;
+                    }
+                }
+                button {
+                    cursor: pointer;
+                    @include hoverbutton();
+                }
+                textarea {
+                    width: 100%;
+                    height: 176px;
+                    margin-bottom: 20px;
+                    color: $grey2;
+                    display: block;
+                    padding: .375rem .75rem;
+                    font-size: 1rem;
+                    background-color: $white;
+                    border: 1px solid $grey7;
+                    padding-left: 30px;
+                    padding-top: 15px;
+                    font-family: "Roboto";
+                    font-weight: 300;
+                    resize: none;
+                    transition: 0.5s;
+                    @media screen and (max-width: 600px) {
+                        font-size: 0.8rem;
+                    }
+                    &:focus {
+                        border: 1px solid $black;
+                    }
+                    &:hover {
+                        border: 1px solid $black;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+}

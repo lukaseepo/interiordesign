@@ -1,0 +1,123 @@
+<footer class="footer-section">
+    <div class="container">
+        <div class="footer-items">
+            <div class="footer-item">
+                <img src="https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/Logo-footer@.png" alt="">
+                <p>One day however a small line of blind text by <br> the name of Lorem Ipsum decided to leave <br> for the far World of Grammar.</p>
+                <div class="icons">
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h2>Other Pages</h2>
+                <ul class="links">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About Us</a>
+                    </li>
+                    <li>
+                        <a href="">Services</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                    <li>
+                        <a href="">Project</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h2>Quick Links</h2>
+                <ul class="links">
+                    <li>
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="">Term Of Service</a>
+                    </li>
+                    <li>
+                        <a href="">Disclaimer</a>
+                    </li>
+                    <li>
+                        <a href="">Credits</a>
+                    </li>
+                    <li>
+                        <a href="">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h2>Latest Projects</h2>
+                <div class="projects">
+                    <div (click)='activateSlider()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/simple-dining-room-interior-design.jpg);">
+                        <div class="background-overlay"></div>
+                    </div>
+                    <div (click)='activateSlider()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/interior-of-modern-design-room-3d-illustration.jpg);">
+                        <div class="background-overlay"></div>
+                    </div>
+                    <div (click)='activateSlider()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/modern-style-interior-design-3d-rendering-2.jpg);">
+                        <div class="background-overlay"></div>
+                    </div>
+                    <div (click)='activateSlider()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/modern-style-interior-design-3d-rendering-3.jpg);">
+                        <div class="background-overlay"></div>
+                    </div>
+                    <div (click)='activateSlider()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/interior-design-of-a-coffee-shop-cafe-3d-rendering.jpg);">
+                        <div class="background-overlay"></div>
+                    </div>
+                    <div (click)='activateSlider()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/modern-style-interior-design-3d-rendering.jpg);">
+                        <div class="background-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf='activate' class="slider">
+        <div (click)='closeSlide()' class="close">×</div>
+        <div class="background-overlay"></div>
+        <owl-carousel-o [options]="customOptions2">
+            <ng-template carouselSlide>
+                <div class="slider-container">
+                    <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/simple-dining-room-interior-design.jpg);" class="item-image"></div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="slider-container">
+                    <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/interior-of-modern-design-room-3d-illustration.jpg);" class="item-image"></div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="slider-container">
+                    <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/modern-style-interior-design-3d-rendering-2.jpg);" class="item-image"></div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="slider-container">
+                    <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/modern-style-interior-design-3d-rendering-3.jpg);" class="item-image"></div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="slider-container">
+                    <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/interior-design-of-a-coffee-shop-cafe-3d-rendering.jpg);" class="item-image"></div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="slider-container">
+                    <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/modern-style-interior-design-3d-rendering.jpg);" class="item-image"></div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</footer>

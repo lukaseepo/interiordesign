@@ -1,0 +1,24 @@
+@import '../../components/mixins.scss';
+@import '../../components/colors.scss';
+.slider-section {
+    @include slider-section2();
+}
+
+.contact-section {
+    .contact-item {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        @media screen and (max-width: 780px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    @include contact-section2();
+}
+
+.map-section {
+    width: 100%;
+    iframe {
+        width: 100%;
+    }
+}
