@@ -12,69 +12,31 @@ import * as $ from "jquery";
 })
 export class HomeComponent implements OnInit {
 
-
-  activate:boolean = false;
-
-  activateSecond:boolean = false;
-
-  activateFourth:boolean = false;
-  activateFifth:boolean = false;
-
   list:any = [{}];
 
   activated:boolean = false;
   
   popUp:boolean = false;
 
-  activateThird:boolean = false;
-
 
   constructor(private http:MainService) { }
  
   ngOnInit(): void {
-  }
-  closeSlide1(){
-    this.activate = false;
+   this.closeSlide();
   }
 
-  closeSlide2(){
-    this.activateSecond = false;
-  }
-
-  closeSlide3(){
-    this.activateThird = false;
-  }
-
-  closeSlide4(){
-    this.activateFourth = false;
-  }
-
-  closeSlide5(){
-    this.activateFifth = false;
-  }
-
-  activateSlider5(){
-    this.activateFifth = true;
-  }
-
-  activateSlider4(){
-    this.activateFourth = true;
+  activateSlide(i:number){
+    const projectItems:any = document.querySelectorAll('.project-item') 
+    const sliders:any = document.querySelectorAll('.slider');
+    sliders[i].classList.add('active');
   }
   
-  activateSlider3(){
-    this.activateThird = true;
+  closeSlide(){
+    const sliders:any = document.querySelectorAll('.slider');
+    for(let i = 0; i < sliders.length; i++){
+      sliders[i].classList.remove('active');
+    }
   }
-
-
-  activateSlider2(){
-    this.activateSecond = true;
-  }
-
-  activateSlider(){
-    this.activate = true;
-  }
-
-
 
   popUpVideo(){
     this.popUp = true;
