@@ -7,17 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectdetailComponent implements OnInit {
 
-  activate:boolean = false;
-  activate2:boolean = false;
-  activate3:boolean = false;
-
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  activateSlide(){
-    this.activate = true;
   }
 
   zoomIn(){
@@ -30,27 +22,17 @@ export class ProjectdetailComponent implements OnInit {
     id.classList.toggle('activateclass')
   }
 
+  activateSlide(i:number){
+    let slides = document.querySelectorAll('.slide');
+    slides[i].classList.add('activate')
+  }
   
   close(){
-    this.activate = false; 
-  }
-  
-  close2(){
-    this.activate2 = false; 
-  }
-  
-  close3(){
-    this.activate3 = false; 
+    let slides = document.querySelectorAll('.slide');
+    for(let i = 0; i < slides.length; i++){
+      slides[i].classList.remove('activate');
+    }
   }
 
-
-
-  activateSlide2(){
-    this.activate2 = true;
-  }
-
-  activateSlide3(){
-    this.activate3 = true;
-  }
 
 }

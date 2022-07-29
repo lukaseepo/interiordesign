@@ -617,7 +617,7 @@
         z-index: 50;
         position: fixed;
         top: 0px;
-        visibility: hidden;
+        left: -100%;
         .background-overlay {
             width: 100%;
             height: 100%;
@@ -1194,5 +1194,5 @@
 }
 
 .active{
-    visibility: visible !important;
+    left: 0px !important;
 }

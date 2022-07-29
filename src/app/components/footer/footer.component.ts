@@ -22,7 +22,7 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  customOptions2: any = {
+  customOptionsSlider: any = {
     loop: true,
     mouseDrag: false,
     touchDrag: false,

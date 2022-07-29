@@ -233,15 +233,17 @@
                 height: 70px;
                 padding-top: 20px;
                 .video-icon {
-                    width: max-content;
-                    height: max-content;
+                    width: 65px;
+                    height: 65px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     border-radius: 50%;
                     position: relative;
                     z-index: 1;
                     cursor: pointer;
-                    img {
-                        width: 60px;
-                        height: 60px;
+                    i {
+                        font-size: 40px;
                         line-height: 45px;
                         z-index: 3;
                         position: relative;
@@ -2251,8 +2253,11 @@
             align-items: center;
             z-index: 10;
             .video-icon {
-                width: max-content;
-                height: max-content;
+                width: 90px;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 border-radius: 50%;
                 position: relative;
                 z-index: 1;
@@ -2265,6 +2270,12 @@
                 @media screen and (max-width:600px) {
                     top: 55px;
                     left: 90px;
+                }
+                i {
+                    font-size: 55px;
+                    line-height: 45px;
+                    z-index: 3;
+                    position: relative;
                 }
                 img {
                     width: 80px;

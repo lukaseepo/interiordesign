@@ -20,14 +20,14 @@
 <section class="image-section">
     <div class="container">
         <div class="image-items">
-            <div (click)='activateSlide()' class="image" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-luxury-and-modern-living-room-with-good-design-leather-sofa-e1604308460479.jpg);"></div>
+            <div (click)='activateSlide(0)' class="image" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-luxury-and-modern-living-room-with-good-design-leather-sofa-e1604308460479.jpg);"></div>
             <div class="image-item">
-                <div (click)='activateSlide2()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-luxury-and-modern-living-room-with-good-design-leather-sofa-1-e1604308468666.jpg);"></div>
-                <div (click)='activateSlide3()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-luxury-and-modern-living-room-with-good-design-leather-sofa-2-e1604308477592.jpg);"></div>
+                <div (click)='activateSlide(1)' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-luxury-and-modern-living-room-with-good-design-leather-sofa-1-e1604308468666.jpg);"></div>
+                <div (click)='activateSlide(2)' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-luxury-and-modern-living-room-with-good-design-leather-sofa-2-e1604308477592.jpg);"></div>
             </div>
         </div>
     </div>
-    <div class="slide" *ngIf='activate'>
+    <div class="slide">
         <ul id='share' class="share">
             <li>
                 <i class="fab fa-facebook-square"></i>
@@ -60,7 +60,7 @@
             <p>3d rendering luxury and modern living room with good design leather sofa</p>
         </div>
     </div>
-    <div class="slide" *ngIf='activate2'>
+    <div class="slide" >
         <ul id="share" class="share">
             <li>
                 <i class="fab fa-facebook-square"></i>
@@ -84,7 +84,7 @@
         <div class="settings">
             <i (click)='zoomIn()' class="fas fa-search-plus"></i>
             <i (click)='activateClass()' class="fas fa-share"></i>
-            <i (click)='close2()' class="fas fa-times"></i>
+            <i (click)='close()' class="fas fa-times"></i>
         </div>
         <div class="background-overlay"></div>
         <div id="slideimage" class="slide-image" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-luxury-and-modern-living-room-with-good-design-leather-sofa-1-e1604308468666.jpg);"></div>
@@ -93,11 +93,11 @@
             <p>3d rendering luxury and modern living room with good design leather sofa</p>
         </div>
     </div>
-    <div class="slide" *ngIf='activate3'>
+    <div class="slide">
         <div class="settings">
             <i (click)='zoomIn()' class="fas fa-search-plus"></i>
             <i (click)='activateClass()' class="fas fa-share"></i>
-            <i (click)='close3()' class="fas fa-times"></i>
+            <i (click)='close()' class="fas fa-times"></i>
         </div>
         <ul id="share" class="share">
             <li>

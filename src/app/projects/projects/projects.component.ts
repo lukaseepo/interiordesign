@@ -6,55 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-  activate:boolean = false;
-  activateSecond:boolean = false;
-  activateThird:boolean = false;
-  activateFourth:boolean = false;
-  activateFifth:boolean = false;
-
-
   constructor() { }
 
   ngOnInit(): void {
   }
-  closeSlide1(){
-    this.activate = false;
+
+  activateSlide(i:number){
+    const sliders:any = document.querySelectorAll('.slider');
+    sliders[i].classList.add('active');
   }
 
-  activateSlider(){
-    this.activate = true;
-  }
-  closeSlide2(){
-    this.activateSecond = false;
-  }
-
-  activateSlider2(){
-    this.activateSecond = true;
+  closeSlide(){
+    const sliders:any = document.querySelectorAll('.slider');
+    for(let i = 0; i < sliders.length; i++){
+      sliders[i].classList.remove('active');
+    }
   }
 
-  closeSlide3(){
-    this.activateThird = false;
-  }
-  activateSlider3(){
-    this.activateThird = true;
-  }
- 
-  closeSlide4(){
-    this.activateFourth = false;
-  }
-  activateSlider4(){
-    this.activateFourth = true;
-  }
-
-
-  closeSlide5(){
-    this.activateFifth = false;
-  }
-  activateSlider5(){
-    this.activateFifth = true;
-  }
-
-  customOptions2: any = {
+  customOptionsSlider: any = {
     loop: true,
     mouseDrag: false,
     touchDrag: false,

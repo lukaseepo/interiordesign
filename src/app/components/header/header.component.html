@@ -74,11 +74,11 @@
         <button (click)='disableLeftBar()'>X</button>
     </div>
     <ul class="nav">
-        <li (click)='activate1()'>
+        <li (click)='activate(0)'>
             <a routerLinkActive="activate" [routerLink]='[""]' [routerLinkActiveOptions]='{exact:true}' href="">home</a>
             <i class="fas fa-chevron-down"></i>
         </li>
-        <ul id="activated1">
+        <ul class="ulActivated">
             <li>
                 <a routerLinkActive="activate" [routerLink]='[""]' [routerLinkActiveOptions]='{exact:true}' href="">home - layout 1</a>
             </li>
@@ -90,21 +90,21 @@
         <li>
             <a routerLinkActive="activate" [routerLink]='["service"]' href="">services</a>
         </li>
-        <li (click)='activate2()'>
+        <li (click)='activate(1)'>
             <a routerLinkActive="activate" [routerLinkActiveOptions]='{exact:true}' [routerLink]="['projects']" href="">projects</a>
             <i class="fas fa-chevron-down"></i>
         </li>
-        <ul id="activated2">
+        <ul class="ulActivated">
             <li>
                 <a routerLinkActive="activate" [routerLinkActiveOptions]='{exact:true}' [routerLink]="['projects']" href="">projects</a>
             </li>
             <li><a routerLinkActive="activate" [routerLink]="['projectdetail']" href="">project detail</a></li>
         </ul>
-        <li (click)='activate3()'>
+        <li (click)='activate(2)'>
             <a routerLinkActive="activate" [routerLink]="['ourteam']" [routerLinkActiveOptions]='{exact:true}' href="">pages</a>
             <i class="fas fa-chevron-down"></i>
         </li>
-        <ul id="activated3">
+        <ul class="ulActivated">
             <li>
                 <a routerLinkActive="activate" [routerLink]="['ourteam']" [routerLinkActiveOptions]='{exact:true}' href="">our team</a>
             </li>
@@ -118,11 +118,11 @@
                 <a [routerLink]="['404-page']" routerLinkActive="activate" href="">404</a>
             </li>
         </ul>
-        <li (click)='activate4()'>
+        <li (click)='activate(3)'>
             <a routerLinkActive="activate" [routerLinkActiveOptions]='{exact:true}' [routerLink]="['contact-us']" href="">contact</a>
             <i class="fas fa-chevron-down"></i>
         </li>
-        <ul id="activated4">
+        <ul class="ulActivated">
             <li>
                 <a routerLinkActive="activate" [routerLinkActiveOptions]='{exact:true}' [routerLink]="['contact-us']" href="">contact 1</a>
             </li>

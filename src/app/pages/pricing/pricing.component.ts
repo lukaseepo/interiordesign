@@ -13,31 +13,15 @@ export class PricingComponent implements OnInit {
 
   }
 
-  activateChevron(){
-    let chevron = document.getElementById('chevron');
-    let color = document.getElementById('activatecolor');
-    let colorSpan = document.getElementById('activatecolorspan');
-    chevron.classList.toggle('activate');
-    color.classList.toggle('activatecolor');
-    colorSpan.classList.toggle('activatecolor');
+  activateChevron(i:number){
+    let chevrons = document.querySelectorAll('.chevron');
+    let colorSpans = document.querySelectorAll('.colorSpan');
+    for(let i = 0; i < chevrons.length && colorSpans.length; i++){
+        chevrons[i].classList.remove('activate');
+        colorSpans[i].classList.remove('activatecolor')
+    }
+    chevrons[i].classList.add('activate');
+    colorSpans[i].classList.add('activatecolor');
   }
-  activateChevron2(){
-    let chevron = document.getElementById('chevron2');
-    let activatecolor = document.getElementById('activatecolor2');
-    let activatecolorSpan = document.getElementById('activatecolorspan2');
-    chevron.classList.toggle('activate');
-    activatecolor.classList.toggle('activatecolor');
-    activatecolorSpan.classList.toggle('activatecolor');
-  }
-  activateChevron3(){
-    let chevron = document.getElementById('chevron3');
-    let activatecolor = document.getElementById('activatecolor3');
-    let activatecolorSpan = document.getElementById('activatecolorspan3');
-    chevron.classList.toggle('activate');
-    activatecolor.classList.toggle('activatecolor');
-    activatecolorSpan.classList.toggle('activatecolor');
-  }
-
- 
 
 }

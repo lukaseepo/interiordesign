@@ -38,6 +38,7 @@
                 background-position: center center;
                 background-repeat: no-repeat;
                 cursor: pointer;
+                left: -100%;
                 @media screen and (max-width: 780px) {
                     height: 556.125px;
                 }
@@ -54,6 +55,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        left: -100%;
         .share {
             min-width: 200px;
             background-color: red;
@@ -415,4 +417,8 @@
             }
         }
     }
+}
+
+.activate{
+    left: 0px !important;
 }

@@ -20,7 +20,7 @@ export class OurteamComponent implements OnInit {
     this.activate = true;
   }
 
-  customOptions2: any = {
+  customOptionsSlider: any = {
     loop: true,
     mouseDrag: false,
     touchDrag: false,

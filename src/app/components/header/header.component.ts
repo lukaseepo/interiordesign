@@ -15,56 +15,30 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  activate1(){
-    let activate = document.getElementById('activated1')
-    let activate2 = document.getElementById('activated2')
-    let activate3 = document.getElementById('activated3')
-    let activate4 = document.getElementById('activated4')
-    activate2.classList.remove('activated')
-    activate3.classList.remove('activated')
-    activate4.classList.remove('activated')
-    activate.classList.toggle('activated')
+  activate(i:number){
+    let uls = document.querySelectorAll('.ulActivated')
+    for(let i = 0; i < uls.length; i++){
+      uls[i].classList.remove('activated');
+    }
+    uls[i].classList.add('activated');
   }
-  activate2(){
-    let activate = document.getElementById('activated2')
-    let activate2 = document.getElementById('activated1')
-    let activate3 = document.getElementById('activated3')
-    let activate4 = document.getElementById('activated4')
-    activate2.classList.remove('activated')
-    activate3.classList.remove('activated')
-    activate4.classList.remove('activated')
-    activate.classList.toggle('activated')
-  }
-  activate3(){
-    let activate = document.getElementById('activated3')
-    let activate2 = document.getElementById('activated1')
-    let activate3 = document.getElementById('activated2')
-    let activate4 = document.getElementById('activated4')
-    activate2.classList.remove('activated')
-    activate3.classList.remove('activated')
-    activate4.classList.remove('activated')
-    activate.classList.toggle('activated')
-  }
-  activate4(){
-    let activate = document.getElementById('activated4')
-    let activate2 = document.getElementById('activated1')
-    let activate3 = document.getElementById('activated3')
-    let activate4 = document.getElementById('activated2')
-    activate2.classList.remove('activated')
-    activate3.classList.remove('activated')
-    activate4.classList.remove('activated')
-    activate.classList.toggle('activated')
-  }
-
 
   enableLeftBar(){
     let leftBar = document.getElementById('leftBar');
-    leftBar.classList.add('enable');
+    leftBar.classList.toggle('enable');
+    let uls = document.querySelectorAll('.ulActivated')
+    for(let i = 0; i < uls.length; i++){
+      uls[i].classList.remove('activated');
+    }
   }
 
   disableLeftBar(){
     let leftBar = document.getElementById('leftBar');
+    let uls = document.querySelectorAll('.ulActivated')
     leftBar.classList.remove('enable');
+    for(let i = 0; i < uls.length; i++){
+      uls[i].classList.remove('activated');
+    }
   }
 
   @HostListener('document:scroll')

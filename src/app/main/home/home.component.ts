@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MainService } from '../main.service';
-import * as $ from "jquery";
+
 
 
 
@@ -19,14 +18,12 @@ export class HomeComponent implements OnInit {
   popUp:boolean = false;
 
 
-  constructor(private http:MainService) { }
+  constructor() { }
  
   ngOnInit(): void {
-   this.closeSlide();
   }
 
   activateSlide(i:number){
-    const projectItems:any = document.querySelectorAll('.project-item') 
     const sliders:any = document.querySelectorAll('.slider');
     sliders[i].classList.add('active');
   }
@@ -102,7 +99,7 @@ export class HomeComponent implements OnInit {
 
 
   
-  customOptions2: any = {
+  customOptionsSlider: any = {
     loop: true,
     mouseDrag: false,
     touchDrag: false,

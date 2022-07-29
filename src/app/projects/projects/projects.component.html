@@ -25,16 +25,16 @@
             <p>Far far away behind the word mountains far from the <br> countries Vokalia and Consonantia there live the blind texts.</p>
             <mat-tab-group>
                 <mat-tab label="ALL">
-                    <div class="project-item">
+                    <div (click)="activateSlide(0)" class="project-item">
                         <div class="project">
-                            <div (click)='activateSlider()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-interior-and-exterior-design.jpg);">
+                            <div class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-interior-and-exterior-design.jpg);">
                                 <div class="background-overlay"></div>
                                 <div class="info">
                                     <h5>Residential Design</h5>
                                     <p>Far far away behind the word mountains far from the countries Vokalia and Consonantia there live the blind texts.</p>
                                 </div>
                             </div>
-                            <div (click)='activateSlider()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/travertine-house-kitchen.jpg);">
+                            <div class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/travertine-house-kitchen.jpg);">
                                 <div class="background-overlay"></div>
                                 <div class="info">
                                     <h5>Residential Design</h5>
@@ -43,14 +43,14 @@
                             </div>
                         </div>
                         <div class="project">
-                            <div (click)='activateSlider()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/modern-staircase.jpg);">
+                            <div class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/modern-staircase.jpg);">
                                 <div class="background-overlay"></div>
                                 <div class="info">
                                     <h5>Restaurant Design</h5>
                                     <p>Far far away behind the word mountains far from the countries Vokalia and Consonantia there live the blind texts.</p>
                                 </div>
                             </div>
-                            <div (click)='activateSlider()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-business-meeting-room-on-high-rise-office-building.jpg);">
+                            <div class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-business-meeting-room-on-high-rise-office-building.jpg);">
                                 <div class="background-overlay"></div>
                                 <div class="info">
                                     <h5>Corporate Design</h5>
@@ -59,14 +59,14 @@
                             </div>
                         </div>
                         <div class="project">
-                            <div (click)='activateSlider()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/black-wooden-furniture-and-an-industrial-lamp-above-a-coffee-mac.jpg);">
+                            <div class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/black-wooden-furniture-and-an-industrial-lamp-above-a-coffee-mac.jpg);">
                                 <div class="background-overlay"></div>
                                 <div class="info">
                                     <h5>Commerical Design</h5>
                                     <p>Far far away behind the word mountains far from the countries Vokalia and Consonantia there live the blind texts.</p>
                                 </div>
                             </div>
-                            <div (click)='activateSlider()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/hotel-lobby.jpg);">
+                            <div class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/hotel-lobby.jpg);">
                                 <div class="background-overlay"></div>
                                 <div class="info">
                                     <h5>Restaurnt Design</h5>
@@ -77,9 +77,9 @@
                     </div>
                 </mat-tab>
                 <mat-tab label="RESIDENTIAL">
-                    <div class="project-item">
+                    <div (click)="activateSlide(1)" class="project-item">
                         <div class="project">
-                            <div (click)='activateSlider2()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-interior-and-exterior-design.jpg);">
+                            <div class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-interior-and-exterior-design.jpg);">
                                 <div class="background-overlay"></div>
                                 <div class="info">
                                     <h5>Residential Design</h5>
@@ -88,7 +88,7 @@
                             </div>
                         </div>
                         <div class="project">
-                            <div (click)='activateSlider2()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/travertine-house-kitchen.jpg);">
+                            <div class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/travertine-house-kitchen.jpg);">
                                 <div class="background-overlay"></div>
                                 <div class="info">
                                     <h5>Residential Design</h5>
@@ -99,8 +99,8 @@
                     </div>
                 </mat-tab>
                 <mat-tab label="CORPORATE">
-                    <div class="project-item">
-                        <div (click)='activateSlider3()' class="project">
+                    <div (click)="activateSlide(2)" class="project-item">
+                        <div class="project">
                             <div class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-business-meeting-room-on-high-rise-office-building.jpg);">
                                 <div class="background-overlay"></div>
                                 <div class="info">
@@ -112,8 +112,8 @@
                     </div>
                 </mat-tab>
                 <mat-tab label="RESTAURANT">
-                    <div class="project-item">
-                        <div (click)='activateSlider4()' class="project">
+                    <div (click)="activateSlide(3)" class="project-item">
+                        <div class="project">
                             <div class="item active" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/modern-staircase.jpg);">
                                 <div class="background-overlay"></div>
                                 <div class="info">
@@ -122,7 +122,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div (click)='activateSlider4()' class="project">
+                        <div class="project">
                             <div class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/hotel-lobby.jpg);">
                                 <div class="background-overlay"></div>
                                 <div class="info">
@@ -134,9 +134,9 @@
                     </div>
                 </mat-tab>
                 <mat-tab label="COMMERICAL">
-                    <div class="project-item">
+                    <div (click)="activateSlide(4)" class="project-item">
                         <div class="project">
-                            <div (click)='activateSlider5()' class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/black-wooden-furniture-and-an-industrial-lamp-above-a-coffee-mac.jpg);">
+                            <div class="item" style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/black-wooden-furniture-and-an-industrial-lamp-above-a-coffee-mac.jpg);">
                                 <div class="background-overlay"></div>
                                 <div class="info">
                                     <h5>Commerical Design</h5>
@@ -149,10 +149,10 @@
             </mat-tab-group>
         </div>
     </div>
-    <div *ngIf='activate' class="slider">
-        <div (click)='closeSlide1()' class="close">×</div>
+    <div class="slider">
+        <div (click)="closeSlide()" class="close">×</div>
         <div class="background-overlay"></div>
-        <owl-carousel-o [options]="customOptions2">
+        <owl-carousel-o [options]="customOptionsSlider">
             <ng-template carouselSlide>
                 <div class="slider-container">
                     <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-interior-and-exterior-design.jpg);" class="item-image"></div>
@@ -185,10 +185,10 @@
             </ng-template>
         </owl-carousel-o>
     </div>
-    <div *ngIf='activateSecond' class="slider">
+    <div class="slider">
         <div class="background-overlay"></div>
-        <div (click)='closeSlide2()' class="close">×</div>
-        <owl-carousel-o [options]="customOptions2">
+        <div (click)="closeSlide()" class="close">×</div>
+        <owl-carousel-o [options]="customOptionsSlider">
             <ng-template carouselSlide>
                 <div class="slider-container">
                     <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-interior-and-exterior-design.jpg);" class="item-image"></div>
@@ -201,10 +201,10 @@
             </ng-template>
         </owl-carousel-o>
     </div>
-    <div *ngIf='activateThird' class="slider">
+    <div class="slider">
         <div class="background-overlay"></div>
-        <div (click)='closeSlide3()' class="close">×</div>
-        <owl-carousel-o [options]="customOptions2">
+        <div (click)="closeSlide()" class="close">×</div>
+        <owl-carousel-o [options]="customOptionsSlider">
             <ng-template carouselSlide>
                 <div class="slider-container">
                     <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/3d-rendering-business-meeting-room-on-high-rise-office-building.jpg);" class="item-image"></div>
@@ -212,10 +212,10 @@
             </ng-template>
         </owl-carousel-o>
     </div>
-    <div *ngIf='activateFourth' class="slider">
+    <div class="slider">
         <div class="background-overlay"></div>
-        <div (click)='closeSlide4()' class="close">×</div>
-        <owl-carousel-o [options]="customOptions2">
+        <div (click)="closeSlide()" class="close">×</div>
+        <owl-carousel-o [options]="customOptionsSlider">
             <ng-template carouselSlide>
                 <div class="slider-container">
                     <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/modern-staircase.jpg);" class="item-image"></div>
@@ -228,10 +228,10 @@
             </ng-template>
         </owl-carousel-o>
     </div>
-    <div *ngIf='activateFifth' class="slider">
+    <div class="slider">
         <div class="background-overlay"></div>
-        <div (click)='closeSlide5()' class="close">×</div>
-        <owl-carousel-o [options]="customOptions2">
+        <div (click)="closeSlide()" class="close">×</div>
+        <owl-carousel-o [options]="customOptionsSlider">
             <ng-template carouselSlide>
                 <div class="slider-container">
                     <div style="background-image: url(https://templatekit.jegtheme.com/inner/wp-content/uploads/sites/15/2020/10/black-wooden-furniture-and-an-industrial-lamp-above-a-coffee-mac.jpg);" class="item-image"></div>
