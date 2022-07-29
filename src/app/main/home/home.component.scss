@@ -475,6 +475,11 @@
             @media screen and (max-width: 600px) {
                 text-align: center;
             }
+            &::ng-deep .mat-tab-labels{
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
             h2 {
                 font-family: "Lato";
                 font-size: 32px;
